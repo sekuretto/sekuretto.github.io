@@ -211,7 +211,7 @@ ul {
 
 .service-icon {
   background-color: #fff;
-  color: #1D809F;
+  color: #262626;
   height: 7rem;
   width: 7rem;
   display: block;
@@ -317,7 +317,7 @@ footer.footer .social-link {
   width: 4rem;
   line-height: 4.3rem;
   font-size: 1.5rem;
-  background-color: #1D809F;
+  background-color: #262626;
   -webkit-transition: background-color 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out;
   -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
