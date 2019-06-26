@@ -41,6 +41,10 @@ h6 {
   font-weight: 700;
 }
 
+ul {
+  font-size: 10fr;
+}
+
 .text-faded {
   color: rgba(255, 255, 255, 0.7);
 }
@@ -102,6 +106,7 @@ h6 {
 
 .masthead h1 {
   font-size: 4rem;
+  text-transform: uppercase;
   margin: 0;
   padding: 0;
 }
@@ -126,7 +131,7 @@ h6 {
   transition: all 0.4s ease 0s;
   -webkit-transform: translateX(250px);
   transform: translateX(250px);
-  background: #1D809F;
+  background: #262626;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -369,9 +374,9 @@ a:hover, a:focus, a:active {
 }
 
 .text-primary {
-  color: #1D809F !important;
+  color: #262626 !important;
 }
 
 .text-secondary {
-  color: #ecb807 !important;
+  color: #737373 !important;
 }
