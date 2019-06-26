@@ -111,6 +111,15 @@ ul {
   padding: 0;
 }
 
+.masthead .social-link {
+  display: block;
+  height: 4rem;
+  width: 4rem;
+  line-height: 4.3rem;
+  font-size: 1.5rem;
+  background-color: #262626;
+}
+
 @media (min-width: 992px) {
   .masthead {
     height: 100vh;
