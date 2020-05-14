@@ -1,0 +1,16 @@
+//links.js
+
+{
+    "linkit":
+    [
+        {"osoite":"http://www.jamk.fi",
+        "teksti":"JAMK"
+        },
+        {"osoite":"http://www.yle.fi",
+        "teksti":"YLE"
+        },
+        {"osoite":"http://www.mtv.fi",
+        "teksti":"MTV"
+        }
+    ]
+}

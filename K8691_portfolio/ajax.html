@@ -1,0 +1,20 @@
+$(document).ready(function(){
+    // use AJAX to load JSON file
+    $.ajax({
+        url: "linkit.json",
+        cache:false,
+        dataType: "json"
+    }).done(function(data) {
+         // console.log(data);  
+    }).fail(function(){
+        console.log("fail");
+    });
+});
+
+// <a href="http://www.jamk.fi">JAMK</a>
+
+function showLinks(data) {
+    for (var linkki of data.linkit) {
+        $("links").append('<li><a href="'+linkki.osoite+'">'+linkki.teksti+'"</a></li>');
+    }
+}

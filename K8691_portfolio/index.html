@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Marja Jämbeck</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <!-- Font Awesome -icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Bootstrap glyphicons
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+        <!-- Google icons
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
+        
+        <!-- CSS-määrittelyt -->
+        <style type="text/css">
+            body {
+                background-color: sandybrown;
+                background-image: url("897.png");
+                background-repeat: no-repeat;
+                background-position: right bottom;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            header, nav, section, footer {
+                max-width: 960px;
+                margin: auto; 
+                padding: 10px;
+            }
+            
+            /* header ja nav pysyvät kiinni yläreunassa (stays in the same place even if the page is scrolled), ei toimi ja peittää ensimmäistä artikkelia, tilalle sticky/display:inline-block;/JavaScript? KORJAA!
+            #otsikko {
+                position: fixed;
+                top: 0;
+                width: 100%;
+            } */
+            
+            /* topnav hover-efektillä */
+            nav ul {
+                list-style-type: none; margin: 0; padding: 0; overflow: hidden; 
+            }
+            /* navigation-bar on top */ 
+            nav li {
+                display: inline; border-right: 1px solid #bbb;
+            } 
+            nav li:last-child {
+                border-right: none;
+            }
+            .navi a {
+                display: inline-block;
+                text-align: center;
+                padding: 5px 10px;
+                text-decoration: none;
+            }
+            .navi a:hover {
+                background-color: brown;
+                color: white;
+            }
+            
+            /* sticks navigation to the top left when scrolling 
+            div.sticky {
+                position: -webkit-sticky;
+                position: sticky;
+                top: 0;
+                left: 0;
+                padding: 5px;
+                background-color: #cae8ca;
+                border: 2px solid #4CAF50;
+            } */
+
+            article {
+                background-color: beige; 
+                border: 1px dashed grey; 
+                border-radius: 10px;
+                margin: auto;
+                padding: 20px;
+            }
+            h1 {
+                text-align: center;
+            }
+            h3 {
+                text-shadow: 5px 3px lightpink;
+            }
+            
+            p.intro::first-letter {
+                font-size:150%;
+            }
+            a:link {
+                color: black;
+                background-color: transparent;
+                text-decoration: none;
+            }
+            a:visited {
+                color: black;
+                background-color: transparent;
+                text-decoration: none;
+            }
+            a:hover {
+                color: saddlebrown;
+                background-color: transparent;
+                text-decoration: none;
+            }
+            a:active {
+                color: gray;
+                background-color: transparent;
+                text-decoration: underline;
+            }
+            a.icon:link {
+                color:#ffffff;
+            }
+            a.icon:visited {
+                color:#ffffff;
+            }
+            a.icon:hover {
+                color:#000000;
+            }
+            /* NOTE: a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective! a:active MUST come after a:hover in the CSS definition in order to be effective!  */
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                padding: 10px;
+                margin: auto;
+            }
+            th {
+                text-align: left;
+            }
+            /* vain harrastukset-taulukkoon kohdistuvat muotoilut */
+            #harrastukset th {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                text-align: left;
+                background-color: #e67300;
+                color: white;
+            }
+            #harrastukset  tr:nth-child(even) {
+                background-color: #ffffff;
+            }
+            /* #harrastukset tr:hover {
+                background-color: #ddd;
+            } */
+            
+            /* katkaise liian pitkä sana, kaikki selaimet */
+            /* https://justmarkup.com/log/2015/07/dealing-with-long-words-in-css/ */
+            .hyphenate {
+                overflow-wrap: break-word;
+                word-wrap: break-word;
+                -webkit-hyphens: auto;
+                -ms-hyphens: auto;
+                -moz-hyphens: auto;
+                hyphens: auto;
+            }
+            
+            /* kuvagalleria-kehykset */
+            .kuvat {
+                display: block;
+                width: 120px; 
+                margin: auto; 
+                padding: 5px; 
+                overflow: auto; 
+                text-align: center;
+            }
+            /* .kuvat > img {
+                opacity: 0.5;
+            }
+            .kuvat > img:hover {
+                opacity: 1,0;
+            } */
+                       
+            /* läpinäkyvä artikkeli/60% opacity */
+            #transparent {
+                background: rgba(192,192,192,0.6);
+            }
+            
+            /* CSS-harjoittelut (koodileikkiä) */
+            /* napit */
+            .btn {
+                border: none; /* Remove borders */
+                color: white; /* Add a text color */
+                padding: 14px 28px; /* Add some padding */
+                cursor: pointer; /* Add a pointer cursor on mouse-over */
+            }
+            .success {background-color: #4CAF50;} /* Green */
+            .success:hover {background-color: #46a049;}
+            
+            .info {background-color: #2196F3;} /* Blue */
+            .info:hover {background: #0b7dda;}
+            
+            .warning {background-color: #ff9800;} /* Orange */
+            .warning:hover {background: #e68a00;}
+            
+            .danger {background-color: #f44336;} /* Red */ 
+            .danger:hover {background: #da190b;}
+            
+            .default {background-color: #e7e7e7; color: black;} /* Gray */ 
+            .default:hover {background: #ddd;}
+            
+            
+        </style>
+        
+        <!-- JavaScript/jQuery -->
+    </head>
+    
+     <body>
+        <header id="otsikko" style="background-color: brown;">
+            <h1 style="color: white;">Marja Jämbeck</h1>
+            
+            <nav style="background-color: beige;">
+                <ul style="text-align:center">
+                    <li class="navi"><a href="#etusivu">Etusivu</a></li>
+                    <li class="navi"><a href="#harrastukset">Harrastukset</a></li>
+                    <li class="navi"><a href="#cv">CV</a></li>
+                    <li class="navi"><a href="#portfolio">Portfolio</a></li>
+                    <!-- <li>|</li>
+                    <li><a href="#kalenteri">Kalenteri</a></li> -->
+                    <li class="navi"><a href="#harjoitukset">Kurssiharjoitukset</a></li>
+                    <li class="navi"><a href="#kuvagalleria">Kuvagalleria</a></li>
+                    <li class="navi"><a href="#koodit">Koodileikkiä</a></li>
+                    <li class="navi"><a href="#linkit">Linkit</a></li>
+                </ul>
+            </nav>
+        </header>
+             
+        <!-- rinnakkainen sisältö, esim. navigaatio -->
+        <!-- <aside></aside> --> 
+        
+         <main>
+             <!-- sticky navigation 
+            <div class="sticky">I am sticky!</div> -->
+                 
+            <section>
+                <!-- myös osiolla (section) voi olla oma header ja/tai footer -->
+                <!-- <header><h2>Marja</h2></header> -->
+                <article>
+                    <h2 id="etusivu"></h2>
+                                            
+                    <p class="intro" title="Marjan esittely" style="text-align: left;"><img src="IMAG0400_1.jpg" alt="Marja" style="float:right; max-width:200px; height:auto; border: 1px dotted black; margin: 0px 0px 15px 20px;">Nimeni on Marja ja opiskelen <a href="www.jamk.fi">JAMK</a>:issa IT-instituutissa tieto- ja viestintätekniikkaa. Koulutussuuntautumiseni on <strong>mediatekniikka</strong> (taustalla myös tietoverkkotekniikan opintoja) ja tavoitteenani on valmistua insinööriksi kevääseen 2020 mennessä.</p>
+                    <!-- <figure style="text-align:right">
+                        <img src="IMAG0400_1.jpg" alt="Marja" style="width:200px; height:300px">
+                        <figcaption>Marja</figcaption>            </figure> -->
+                    <p>Web-sivujen suunnittelu ja siihen liittyvien uusien web-ohjelmointitekniikoiden opettelu on ollut intohimoni aina siitä asti, kun lukiovuosina opettelin itse HTML:n alkeet ja aloin kyhätä omia web-sivujen raakileita. Haaveenani on joskus työskennellä web-kehityksen parissa, ja siitä kehittyä pikkuhiljaa ja laajentaa osaamistani frontendistä fullstackiin. Myös kyberturvallisuus kiinnostaa minua.</p>
+                    <p>Toiveenani ja tavoitteenani olisi päästä suorittamaan opiskeluun kuuluvaa harjoittelua joko tulevana tai ensi vuoden kesällä.</p>
+                    <h3>Osaaminen</h3>
+                        <ul>
+                            <li>HTML5 (myös XML ja vanhemmat HTML-versiot)</li>
+                            <li>CSS3 (responsive web design, harjoittelussa W3.CSS ja Bootstrap)</li>
+                            <li>JavaScript (DOM, Angular, Ajax, React, JSON, LocalStorage... vielä harjoittelussa)</li>
+                            <li>PHP</li>
+                            <li>MySQL</li>
+                            <li>WordPress</li>
+                            <li>Adobe Photoshop (perus-kuvankäsittely)</li>
+                            <li>Adobe Premiere Pro (perus-video-/audiokäsittely)</li>
+                            <li>GitHub (vielä harjoittelussa)</li>
+                            <li>Laravel (vielä harjoittelussa)</li>
+                            <li>Microsoft Visual Studio</li>
+                            <li>C++</li>
+                            <li>C# (vielä harjoittelussa)</li>
+                            <li>Linux Ubuntu (web-palvelin- ja muu perus-/palvelinkäyttö)</li>
+                            <li>Linux Kali (kyberturvallisuustyökalut harjoittelussa)</li>
+                            <li>CCNA (Cisco Certified Network Associate), osuudet 1 & 2, ei sertifikaattia</li>
+                            <li>tietoverkkojen toiminnan perustuntemus</li>
+                            <li>projektityöskentely</li>
+                        </ul>
+                    <p style="background-color: lightpink; text-align:center">Ota yhteyttä: <b>K8691(at)student.jamk.fi</b></p>
+                </article>
+            </section>
+            
+            <section>    
+                <article style="background-color: bisque;">
+                    <h3 id="harrastukset">Harrastukset</h3>
+                    <!-- <aside>
+                    <p>sekalaista liibalaabaa</p>
+                    </aside> -->
+            
+                    <div style="overflow-x:auto;">
+                    <table id="harrastukset">
+                        <th>Tärkeimmät</th>
+                        <th>Liikunta</th>
+                        <th>Muut kiinnostuksenkohteet</th>
+                        <tr>
+                            <td>web-koodailuharjoittelu</td>
+                            <td>Pokemon Go -lenkkeily</td>
+                            <td>Dungeons & Dragons<br>(erityisesti Critical Role)</td>
+                        </tr>
+                        <tr>
+                            <td>World of Warcraft<br>(ja muut tietokonepelit)</td>
+                            <td>pyöräily</td>
+                            <td>pelien striimaaminen<br>(<a href="https://www.youtube.com/channel/UCDfm2sT40ZyXVgw2JyBg1XQ">Youtube: Sekuretto</a>)</td>
+                        </tr>
+                        <tr>
+                            <td>lukeminen</td>
+                            <td></td>
+                            <td>valokuvailu</td>
+                        </tr>
+                        <tr>
+                            <td>musiikin kuuntelu</td>
+                            <td></td>
+                            <td>palapelit</td>
+                        </tr>
+                        <tr>
+                            <td>anime/manga</td>
+                            <td></td>
+                            <td>piirtäminen</td>
+                        </tr>
+                        <tr>
+                            <td>kutominen</td>
+                            <td></td>
+                            <td>bullet journal</td>
+                        </tr>
+                        <tr>
+                            <td>Netflix, tv-sarjat</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    </div>
+                </article>
+            </section>
+            
+            <section>
+                <article>
+                    <h3 id="cv">CV</h3>
+                    <p><b>Koulutus:</b></p>
+                        <ul>
+                            <li>Perhon lukio, ylioppilas, 2002</li>
+                            <li>Jyväskylän ammattikorkeakoulu, tietotekniikan koulutusohjelma (insinööri), tietoverkkotekniikka, -2016
+                                <ul>
+                                    <li>perusopintoja ja joitakin syventäviä ammattiopintoja</li>
+                                </ul></li>
+                            <li>Jyväskylän ammattikorkeakoulu, tieto- ja viestintätekniikka (insinööri), mediatekniikka, 2016-(2020)</li>
+                        </ul>
+                    <br>
+                    <p><b>Muut kurssit:</b></p>
+                        <ul>
+                            <li>HTML and XHTML, JAMK avoin ammattikorkeakoulu, 2014</li>
+                            <li>Skriptiohjelmointi (PHP), JAMK avoin ammattikorkeakoulu, 2013</li>
+                        </ul>
+                    <br>
+                    <p><b>Työkokemus:</b></p>
+                         <ul>
+                            <li>A-lehdet Oy, myyntineuvottelija, kesä-heinäkuu 2017
+                                <ul>
+                                    <li>A-lehtien tilausten myynti puhelimitse</li>
+                                </ul></li>
+                            <li>Suoramarkkinointi Mega Oy, asiakasneuvottelija, syyskuu 2015 - maaliskuu 2017
+                                <ul>
+                                    <li>tilausten ja ajanvarausten puhelinmyynti</li>
+                                </ul></li>
+                            <li>aiempaa työkokemusta, lukiovuodet 1999-2002 ja myöhemmin
+                                <ul>
+                                    <li>mm. puhelinmyyntiä, nurmikonleikkuuta ja kesäkioskin pyörittämistä kesätöinä</li>
+                                </ul></li>
+                        </ul>
+                    <br>
+                    <p><b>Muut luottamustoimet:</b></p>
+                        <ul>
+                            <li>epävirallinen omaishoitaja/edunvalvoja perheessä isän kuoleman jälkeen (2004, n. 2 vuotta)</li>
+                            <li>World of Warcraft: guild officer jo useita vuosia (yhä samassa roolissa mutta tällä hetkellä en ole aktiivinen ja pelaan vain lähinnä rentoutuakseni)</li>
+                            <li>Web-projekti -kurssin ryhmätyön vastaava projektipäällikkö (kevät 2017)</li>
+                        </ul>
+                    <br>
+                    <p><b>Kielitaito:</b></p>
+                        <ul>
+                            <li>suomi (äidinkieli)</li>
+                            <li>englanti (erinomainen)</li>
+                            <li>ruotsi (kohtalainen)</li>
+                            <li>saksa (heikohko, ei harjoitusta lukion jälkeen)</li>
+                        </ul>
+                </article>
+             </section>
+            
+            <section>
+                <article style="background-color: bisque;">
+                    <h3 id="portfolio">Portfolio</h3>
+                    <p class="hyphenate"><b>Opiskelutavoitteet</b>: harjoitella CSS/JavaScript/jQuery/React/MySQL/PHP/GitHub/Photoshop/C#-käyttöä...</p>
+                    <p><b>Työnäytteitä</b> (kursseilta, yms.): </p>
+                    <ul class="fa-ul">
+                        <li><i class="fa-li fa fa-check-square-o"></i>tämä sivusto ja sen (tulevat) vaihtoehtoiset layoutit
+                            <ul>
+                                <li>kehityksen alla: ikonien toiminta, float/sticky-ylävalikko, slide-sivuvalikko, dropdown, kuvagalleria ja kurssiharjoitus-sisältö</li></ul></li>
+                        <li><i class="fa-li fa fa-check-square-o"></i>Web-palveluiden määrittely ja suunnittelu -kurssi (syksy 2017): projektiryhmän web-palvelun projektidokumentointi
+                            <ul>
+                                <li>tulossa...</li>
+                            </ul></li>
+                        <li><i class="fa-li fa fa-square-o"></i>menossa olevien kurssien harjoituksia, kts. <a href="#harjoitukset">Kurssiharjoitukset</a>
+                            <ul>
+                                <li>Web-projekti 2 -kurssi (kevät 2018): Web-palveluiden määrittely ja suunnittelu -kurssilla suunnitellun web-palvelun koodaus ja toteutus (käytettyjä tekniikoita: HTML, CSS, Bootstrap, PHP, Laravel, GitHub, ryhmätyö)
+                                    <ul><li><a href="http://late-g.com/platz">Platz - palveluiden osto/myynti/vaihto</a></li>
+                                    <ul><li><a href="/platz">lähdekoodit &amp; dokumentaatio</a></li></ul></ul></li>
+                                <li>C# -harjoituksia</li>
+                                <li>PHP -harjoituksia</li>
+                                <li>Adobe Photoshop -harjoituksia</li>
+                                <li>Adobe Premiere Pro harjoitustyö</li>
+                                <li>Ubuntu-webserver toteutus</li>
+                                <li>Tietorakenteet ja algoritmit -kurssi: <a href="tietorakenne/index.html">harjoitustyö</a> jQueryllä näppäimistön toiminnasta algoritmina</li>
+                            </ul></li>
+                        <li><i class="fa-li fa fa-square-o"></i>...</li>
+                    </ul>
+                                        
+                </article>
+            </section>
+            
+            <section>
+                <article>
+                    <h3 id="kalenteri">Kalenteri</h3>
+                    <div style="overflow-x:auto; text-align:center;">
+                        <iframe src="https://calendar.google.com/calendar/embed?src=marja.jambeck%40gmail.com&ctz=Europe%2FHelsinki" style="border: 0" width="800" height="600" frameborder="0" text-align=center; scrolling="auto"></iframe>
+                    </div>
+                    <br>
+                    <h3 id="aikataulu">Katselulista</h3>
+                    <ul style="border-left: 5px solid red; display: inline-block; background-color: #f1f1f1; list-style-type: none; padding: 10px 20px;">
+                        <li><b>Anime</b>:
+                            <ul>
+                                <li>Ghost in the Shell: Stand Alone Complex</li>
+                                <li>Detective Conan</li>
+                                <li>Lupin III</li>
+                                <li>Full Moon wo Sagashite</li>
+                                <li>Higurashi no Naku Koro ni</li>
+                                <li>Great Teacher Onizuka</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul style="border-left: 5px solid blue; display: inline-block; background-color: #f1f1f1; list-style-type: none; padding: 10px 20px;">
+                        <li><b>Sarjat</b>:
+                            <ul>
+                                <li>Critical Role</li>
+                                <li>Bones</li>
+                                <li>Touch</li>
+                                <li>The X-Files</li>
+                                <li>Teen Wolf</li>
+                                <li>Lost</li>
+                                <li>Lie To Me</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+            
+            
+            <section>
+                <article style="background-color: bisque;">
+                    <h3 id="harjoitukset">Kurssiharjoitukset</h3>
+                    <p>Menossa olevien kurssien harjoituksia.</p>
+                    <p><a href="ttos0200.html">TTOS0200 Olio-ohjelmointi</a> (C#)<br>
+                    <a href="/~K8691/platz/index.html">TTMS0700 Web-projekti 2</a>: ryhmätyö, Web-palvelun määrittely ja suunnittelu -kurssin projektin toteutus, Platz -palveluiden myynti/osto/vaihto<br>
+                    <a href="ttms0900.html">TTMS0800 Web-palvelinohjelmointi</a> (PHP)<br>
+                    <a href="ttms0900.html">TTMS0900 Web-palvelun hallinta</a> (Linux Ubuntu -webpalvelin)</p>
+                </article>
+            </section>
+         
+            <section>
+                <article>
+                    <h3 id="kuvagalleria">Kuvagalleria</h3>
+                    <p></p>
+                    <div class="kuvat">
+                        <img src="sekuretto113072500-main.jpg" width="100" height="auto"><br>Sekuretto
+                    </div>
+                </article>
+            </section>
+    
+            <section>
+                <article id="transparent">
+                    <h3 id="koodit">Koodileikkiä</h3>
+                    <p>Ja muita sekalaisia muistiinpanoja ja testailuja...</p><br>
+                    <p><b>Opiskelua</b>: <a href="https://www.w3schools.com/css/css_dropdowns.asp">W3Schools: CSS Dropdowns</a> -></p><br>
+                    <p><b>Muistilista:</b></p>
+                    <ul>
+                        <li><a href="https://www.w3schools.com/css/css_navbar.asp">W3Schools: CSS Navigation Bar (Responsive TopNav/SideNav &amp; Dropdown Menu)</a></li>
+                        <li><a href="https://www.w3schools.com/html/html_layout.asp">W3Schools: HTML Layout</a></li>
+                        <li><a href="https://www.w3schools.com/howto/howto_js_todolist.asp">W3Schools: How To / To-Do List</a></li>
+                        <li><a href="https://www.w3schools.com/howto/howto_css_sidenav_buttons.asp">W3Schools: How To / Side Navigation Buttons</a></li>
+                        <li><a href="https://www.w3schools.com/howto/howto_css_devices.asp">W3Schools: How To / Device Look</a></li>
+                        <li><a href="https://www.w3schools.com/howto/howto_css_calendar.asp">W3Schools: How To / CSS Calendar</a></li>
+                        <li><a href="https://www.w3schools.com/howto/howto_js_animate_icons.asp">W3Schools: How To / Animate Icons (Font Awesome)</a></li>
+                        <li><a href="https://www.w3schools.com/howto/howto_google_fonts.asp">W3Schools: How To / Google Fonts</a></li>
+                        <li><a href="https://www.w3schools.com/howto/howto_js_draggable.asp">W3Schools: How To / Create a Draggable HTML Element</a></li>
+                        <li><a href="https://www.w3schools.com/bootstrap/default.asp">W3Schools: Bootstrap</a></li>
+                    </ul>
+                    <br>
+                    <button class="btn success">Success</button>
+                    <button class="btn info">Info</button>
+                    <button class="btn warning">Warning</button>
+                    <button class="btn danger">Danger</button>
+                    <button class="btn default">Default</button>
+                </article>
+            </section>
+            
+            <section>
+                <article style="background-color: bisque;">
+                    <h3 id="linkit">Linkit</h3>
+                    <p><a href="https://my.diaroapp.com">Diaro</a>: online diary<br>
+                    <del>Blogi</del><br>
+                    <a href="https://www.youtube.com/channel/UCDfm2sT40ZyXVgw2JyBg1XQ">Youtube: Sekuretto</a>, omia pelivideoita<br>
+                    <br><a href="https://worldofwarcraft.com/en-gb/character/saurfang/sekuretto">Sekuretto</a>, lvl 110 Night Elf Feral Druid @ World of Warcraft<br>
+                    <a href="https://geekandsundry.com/shows/critical-role/">Critical Role @ Geek and Sundry</a>: voice actors play Dungeons & Dragons (<a href="https://www.youtube.com/geekandsundry">Youtube</a>/<a href="http://criticalrolepodcast.geekandsundry.com/">podcast</a>)<br>
+                    <br>
+                    <a href="www.w3schools.com">W3Schools</a>: tutorials on HTML/CSS/JavaScript/jQuery/SQL/PHP yms.<br>
+                    <a href="https://www.w3schools.com/howto/default.asp">W3Schools: How To</a><br>
+                    <br>
+                    <a href="https://fontawesome.com/">Font Awesome</a><br>
+                    <a href="https://www.w3schools.com/colors/colors_picker.asp">HTML Color Picker</a><br>
+                    <br>
+                    <a href="http://www.google.fi">Google</a></p>
+                </article>
+            </section>
+        </main>
+        
+        <footer style="background-color: firebrick">
+            <div style="color:white; text-align: center;"><a class="icon" href="#otsikko"><i class="fa fa-home fa-fw" style="font-size:24px"></i></a><i class="fa fa-heart fa-fw" style="font-size:24px"></i><i class="fa fa-calendar fa-fw" style="font-size:24px"></i><i class="fa fa-google fa-fw" style="font-size:24px"></i><i class="fa fa-envelope-o fa-fw" style="font-size:24px"></i><i class="fa fa-cloud fa-fw" style="font-size:24px"></i><i class="fa fa-skype fa-fw" style="font-size:24px"></i><i class="fa fa-wordpress fa-fw" style="font-size:24px"></i><i class="fa fa-youtube fa-fw" style="font-size:24px"></i><i class="fa fa-twitch fa-fw" style="font-size:24px"></i><i class="fa fa-steam-square fa-fw" style="font-size:24px"></i><i class="fa fa-instagram fa-fw" style="font-size:24px"></i><i class="fa fa-facebook-official fa-fw" style="font-size:24px"></i><i class="fa fa-github fa-fw" style="font-size:24px"></i><a class="icon" href="https://www.linkedin.com/in/marja-j%C3%A4mbeck-315a9169/"><i class="fa fa-linkedin fa-fw" style="font-size:24px"></i></a></div>
+            <p style="color:white; text-align:center">Marja Jämbeck (sisältö &amp; layout) &copy; 2018<br>
+            Sailor Moon (taustakuva) &copy; Naoko Takeuchi/Toei Animation/Aethereality.net</br_></p>
+        </footer>
+        
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    </body>
+</html>

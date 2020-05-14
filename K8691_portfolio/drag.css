@@ -1,0 +1,15 @@
+.draggable {
+    width: 150px;
+    height: 150 px;
+    padding: 20 px;
+    border: 1px dashed gray;
+    cursor: pointer;
+}
+
+#drag1 {
+    background-color: aquamarine;
+}
+
+#drag2 {
+    background-color: coral;
+}
