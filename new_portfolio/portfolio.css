@@ -13,12 +13,14 @@
   max-width: 100%;
   display: block;
   margin: auto;
-  background-image: url('../img/bg-masthead.jpg');
+  /* darken effect on image to make text over image show better */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/bg-masthead.jpg');
   background-position: center;
   background-size: cover;
 }
 
 .showcase h1 {
+  color: #dadada;
   font-size: 5rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -26,9 +28,31 @@
   padding: 0;
 }
 
+.showcase h3 {
+  color: #dadada;
+}
+
 .content {
   width: 70%;
 }
+
+.content img {
+  float: right;
+  width: 250px;
+  height: auto;
+  border: 1px dotted black;
+  margin: 0px 0px 15px 20px;
+}
+
+.btn-dark {
+  padding: 15px;
+}
+
+/* @media only screen and(min-width: 1200px) {
+  .content img {
+    width: 350px;
+  }
+} */
 
 
 /*#showcase {
