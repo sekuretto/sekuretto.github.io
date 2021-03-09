@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  background-color: #5995DA;
+}
+
+.header {
+  background-color: #B2D6FF;
+}
+
+.jumbotron,
+.card-body {
+  padding: 50px;
+}
+
+.content {
+  background-color: #EAEDF0;
+}
+
+.sign-up {
+  background-color: #D6E9FE;
+}
+
+.feature-1 {
+  background-color: #F5CF8E;
+}
+
+.feature-2 {
+  background-color: #F09A9D;
+}
+
+.feature-3 {
+  background-color: #C8C6FA;
+}
+
+.feature-4 {
+  background-color: rgb(118, 255, 141);
+}
+
+.footer {
+  height: 50px;
+}
+
+@media only screen and (min-width: 960px) {
+
+  nav,
+  div,
+  .row {
+    max-width: 960px;
+    margin: auto;
+  }
+}

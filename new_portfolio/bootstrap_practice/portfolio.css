@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+.navbar-brand,
+.nav-link {
+  margin-left: 50px;
+}
+
+.navbar-text {
+  margin-left: 200px;
+  margin-right: 100px;
+}
+
+.showcase {
+  height: 100vh;
+  max-width: 100%;
+  display: block;
+  margin: auto;
+  /* darken effect on image to make text over image show better */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/bg-masthead.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.showcase h1 {
+  color: #dadada;
+  font-size: 5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.showcase h3 {
+  color: #dadada;
+}
+
+.content {
+  width: 70%;
+}
+
+.content img {
+  float: right;
+  width: 200px;
+  height: auto;
+  border: 1px dotted black;
+  margin: 0px 0px 15px 20px;
+}
+
+.btn-dark {
+  padding: 15px;
+}
+
+/* @media only screen and(min-width: 1200px) {
+  .content img {
+    width: 350px;
+  }
+} */
+
+
+/*#showcase {
+  min-height: 30rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: auto;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("../img/bg-masthead.jpg");
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/bg-masthead.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+#showcase .social-link {
+  display: block;
+  height: 4rem;
+  width: 4rem;
+  line-height: 4.3rem;
+  font-size: 1.5rem;
+  background-color: #262626;
+}*/
