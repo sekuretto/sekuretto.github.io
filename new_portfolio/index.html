@@ -9,7 +9,8 @@
   <title>Sekuretto: Marja Jämbeck</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-  <link rel="stylesheet" href="portfolio.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/a96490c3a3.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -24,13 +25,36 @@
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Skills</a>
+            <a class="nav-link" href="#skills">Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Portfolio</a>
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#image-gallery">Image Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Links
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="https://github.com/sekuretto"><i class="fab fa-github"></i> Github</a>
+              </li>
+              <li><a class="dropdown-item" href="https://www.linkedin.com/in/marja-jambeck/"><i
+                    class="fab fa-linkedin"></i> LinkedIn</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="https://critrole.com/"><i class="fab fa-critical-role"></i> Critical
+                  Role</a></li>
+            </ul>
           </li>
         </ul>
         <span class="navbar-text">
@@ -43,24 +67,32 @@
   <!-- Header Showcase -->
   <header>
     <div class="showcase position-relative">
-      <div class="container-fluid position-absolute top-50 start-50 translate-middle text-center">
+      <div class="showcase-text container-fluid text-center">
         <h1 class="mb-1">Marja Jämbeck</h1>
         <h3 class="mb-5">
           <em>Junior Web Developer &amp; Designer</em>
         </h3>
+        <div class="social-link">
+          <a href="https://github.com/sekuretto">
+            <i class="fab fa-github fa-3x"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/marja-jambeck/">
+            <i class="fab fa-linkedin fa-3x"></i>
+          </a>
+        </div>
       </div>
-      <!-- <img src="../img/bg-masthead.jpg" id="showcase" class="img-fluid" alt=""> -->
     </div>
   </header>
 
   <!-- Content -->
-  <section>
+  <section id="about">
     <article class="container-fluid content">
       <p class="lead mt-5 mb-4"><img src="./images/marja.jpg" alt="Marja">Nimeni on Marja ja opiskelen <a
           href="http://www.jamk.fi">JAMK</a>:issa IT-instituutissa tieto- ja viestintätekniikkaa.
         Koulutussuuntautumiseni
         on <strong>mediatekniikka</strong> (taustalla myös
-        tietoverkkotekniikan opintoja) ja tavoitteenani on valmistua insinööriksi vuoden 2021 aikana.</p>
+        tietoverkkotekniikan opintoja) ja tavoitteenani on valmistua insinööriksi vuoden 2021 aikana, sillä alan olla
+        opinnäytetyötä vaille valmis.</p>
       <p class="lead mb-4">Web-sivujen suunnittelu ja siihen liittyvien uusien web-ohjelmointitekniikoiden opettelu
         on ollut intohimoni aina siitä asti, kun lukiovuosina opettelin itse HTML:n alkeet ja aloin kyhätä omia
         web-sivujen raakileita. Haaveenani on päästä työskentelemään web-kehityksen parissa, ja siitä kehittyä
@@ -71,18 +103,572 @@
         Toiveenani ja tavoitteenani olisi päästä töihin harjoittelemaan ja kehittämään taitojani kuluvan vuoden
         aikana, ja siten päästä kehittymään web-kehittäjänä/ohjelmoijana ja päästä oppimaan uusiakin tekniikoita.
       </p>
-      <a class="btn btn-dark btn-xl js-scroll-trigger" href="CV_jambeck_2020.pdf">My CV</a>
+      <a class="btn btn-dark btn-xl js-scroll-trigger" href="CV_jambeck_2021.pdf">My CV</a>
       <p class="lead mb-5"><br />Voit lukea minusta lisää myös <a
-          href="https://www.linkedin.com/in/marja-j%C3%A4mbeck-315a9169/">LinkedIn</a>:stä ja vanhasta portfoliosta
-        (kts.
-        Recent Projects).</p>
+          href="https://www.linkedin.com/in/marja-jambeck/">LinkedIn</a>:stä.</p>
     </article>
-
   </section>
 
+  <section id="skills" class="bg-dark">
+    <article class="container-fluid content">
+      <h2 class="text-center mb-5">Skills &amp; Tools</h2>
 
+      <div class="skills-grid">
+        <div class="card">
+          <div class="card-header">
+            <h5><strong>HTML</strong></h5>
+            <div class="stars">
+              <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                class="fas fa-star"></i> <i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="card-body">
+            <img src="images/HTML5_Logo.svg" alt="HTML 5">
+            <!-- <h6 class="card-title">Special title treatment</h6> -->
+            <p class="card-text">Koodausurani aloituskieli, jonka ohella opetellut myös CSS:ää. Aikanaan aloitin HTML:n
+              itseopiskelun erilaisten
+              WYSIWYG-editorien kautta, ja opettelin HTML4:n ja XHTML:n. Tuohon aikaan tuli harrasteprojekteina
+              rakenneltua useampiakin websivustoja pelkällä HTML:llä ja CSS:llä. Nykyisin taidot on totta kai päivitetty
+              <strong>HTML5</strong>:een ja semanttiseen rakenteeseen.</p>
+          </div>
+        </div>
 
+        <div class="card">
+          <div class="card-header">
+            <h5><strong>CSS</strong></h5>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+          <div class="card-body">
+            <img src="images/css3.svg" alt="CSS3">
+            <p class="card-text">Pitkälti itseopiskellut taidot, joita olen vahvistanut koulussa ja opiskellut yhä itse
+              lisää. Perustyylimäärittelyt ja typografia onnistuvat melko
+              vaivatta, ja mobile first on tärkeä suunnittelun käsite. Käytän luontevasti myös
+              <strong>Bootstrapia</strong> sekä
+              <strong>Flexboxia</strong> sivujen rakentamisessa, ja olen kokeillut myös W3.CSS:ää. Pidän CSS:n
+              visuaalisuudesta ja
+              käyttömahdollisuuksista, mutta harjoitusta tarvitsen
+              vielä erityisesti media queryjen luontevassa käytössä, CSS animoinnnissa/transitioneissa sekä Gridin
+              käytössä.<br>
+              Käyttöliittymien suunnittelumielessä haluaisin oppia vielä myös parempaa asettelua.
+            </p>
+            <a href="https://github.com/sekuretto/HTML-and-CSS" class="btn btn-dark">Github</a>
+          </div>
+        </div>
 
+        <div class="card">
+          <div class="card-header">
+            <h5><strong>SASS</strong></h5>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+          <div class="card-body">
+            <img src="images/sass-1.svg" alt="Sass">
+            <p class="card-text">Olen opetellut Sassia koulussa, ja jatkanut opettelua sen jälkeen itse. Harjoittelin
+              tutoriaalin avulla rakentaen pari pientä sivupohjaa, joiden tyylitiedostot rakensin Sassilla. Sen jälkeen
+              olen käyttänyt Sassia tämän portfoliosivun rakentamisessa. Aion käyttää Sassia myös jatkossa
+              mahdollisimman paljon ja jatkaa sen harjoittelua, sillä sen käyttö ja syntax tuntuvat kuitenkin
+              luontevilta.</p>
+            <a href="https://github.com/sekuretto/TTMS0400-web-visualisointi" class="btn btn-dark">Github</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h5><strong>JavaScript</strong></h5>
+            <div class="stars">
+              <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                class="fas fa-star-half-alt"></i> <i class="far fa-star"></i>
+            </div>
+          </div>
+          <div class="card-body">
+            <img src="images/logo-javascript.svg" alt="JavaScript">
+            <p class="card-text">JavaScriptin perusteet alkavat olla melko hyvin hallussa. Olen koulun kurssien ja
+              projektien lisäksi opetellut JavaScriptiä lisää parin Udemy-kurssin avulla, ja tehnyt kymmenittäin pieniä
+              koodausprojekteja kurssiharjoituksina, joista useassa tehnyt jonkinlaista DOM/event käsittelyä. Lisäksi
+              olen kokeillut myös jQueryä, Ajaxia, Local Storagea sekä Fetch API:tä. Datan käsittelyssä tutuinta minulle
+              on JSON-muotoinen data. Tarvitsen harjoitusta vielä ainakin hyvään koodirakenteeseen.<br><br>
+              Viimeisimpänä olen tehnyt oman projektin: Stock Data Project (kts. <a href="#portfolio">Portfolio</a>).
+            </p>
+            <a href="https://github.com/sekuretto/JavaScript" class="btn btn-dark">Github</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h5><strong>React</strong></h5>
+            <div class="stars">
+              <i class="fas fa-star"></i> <i class="fas fa-star-half-alt"></i> <i class="far fa-star"></i> <i
+                class="far fa-star"></i> <i class="far fa-star"></i>
+            </div>
+          </div>
+          <div class="card-body">
+            <img src="images/react.png" alt="React">
+            <p class="card-text">Olen aloittanut Reactin itseopiskelun. Olen tehnyt crash course -tutoriaalin avulla
+              Reactilla pienen task tracker -sovelluksen opetellen Reactin perusrakennetta. Olen aloittanut
+              Udemy-kurssin jatkaakseni Reactin oppimista lisää. Toistaiseksi olen vasta tutustunut propseihin,
+              stateihin ja hookseihin.<br><br>
+              Reactin opettelun yhteydessä saanut olen saanut kosketusta myös <strong>Node.js</strong>:n käyttöön, mutta
+              tarvitsen senkin
+              osalta vielä roimasti harjoitusta ja aion jatkaa siihenkin tutustumista Reactin rinnalla.<br><br>
+              Reactin ohella minua kiinnostavat myös <strong>Vue, TypeScript ja Angular</strong>, ja aion kokeilla niitä
+              ja jatkaa
+              opiskeluani niihin ehkä Reactin jälkeen.
+            </p>
+            <a href="https://github.com/sekuretto/React" class="btn btn-dark">Github</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h5><strong>WordPress</strong></h5>
+            <div class="stars">
+              <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                class="far fa-star"></i> <i class="far fa-star"></i>
+            </div>
+          </div>
+          <div class="card-body">
+            <img src="images/wordpress.png" alt="WordPress">
+            <p class="card-text">Suoritin koulussa kurssin, missä on opettelin WordPressin
+              käyttöönottoa ja
+              hallinnointia sekä perustoimintoja. Kurssilla kävin läpi myös teeman kustomointia,
+              sisällöntuotantoa ja käyttäjämäärittelyjä. Kokeilin myös erilaisia lisäosia, mm. WooCommercea, sekä custom
+              post-tyyppejä, sekä oman
+              teeman, lisäosien ja
+              widgettien luomista.<br><br>
+              Olen ollut myös mukana puolivuotisessa koulun kurssiprojektissa, missä oma ryhmäni suunnitteli ja loi
+              asiakkaan
+              toiveiden pohjalta toimivan web-sovelluksen prototyypin. Tämä prototyyppi toteutettiin
+              WordPressillä,
+              käyttäen myös itserakennettuja lisäosia ja custom post -tyyppejä (kts. <a href="#portfolio">Portfolio</a>:
+              Wille).<br><br>
+              WordPress-kehittäminen kiinnostaa minua edelleen, ja sitä opettelisin mielellään lisää myös
+              tulevaisuudessa, jos siihen tilaisuus aukeaa.
+            </p>
+            <a href="https://github.com/sekuretto/WordPress" class="btn btn-dark">Github</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h5><strong>Git</strong></h5>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+          <div class="card-body">
+            <img src="images/git.png" alt="Git">
+            <p class="card-text">Git-versionhallinnan käyttö on minulle jo aika luontevaa. Käytän sitä tottuneesti joko
+              suoraan komentoriviltä tai käyttöliittymästä. Olen käyttänyt Gittiä koko opintojeni ajan sekä
+              kouluprojekteissa että omissa projekteissa. Olen käynyt koulussa myös kurssin Gitin käytöstä. Myös issue
+              board, milestones. wiki ja pagesin käyttö on tullut tutuksi kouluprojekteissa ja tehtävissä. Omat
+              projektit säilön nykyisin lähes poikkeuksetta Githubiin, kun taas koulussa käytetään Gitlabia.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h5><strong>Figma</strong></h5>
+            <div class="stars">
+              <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                class="far fa-star"></i> <i class="far fa-star"></i>
+            </div>
+          </div>
+          <div class="card-body">
+            <img src="images/figma-1.svg" alt="Figma">
+            <p class="card-text">Olen käyttänyt Figmaa käyttöliittymäsuunnitteluun ja mockupien tekoon jokaisessa
+              opiskeluprojektissa, jossa olen ollut mukana. Siitä on tullut itselleni mieluisin työkalu
+              käyttöliittymäsuunnittelussa.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h5><strong>PHP</strong></h5>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i> <i class="far fa-star"></i> <i class="far fa-star"></i>
+            </div>
+          </div>
+          <div class="card-body">
+            <img src="images/php-logo.svg" alt="PHP">
+            <p class="card-text">Opiskelin PHP:tä koulun kurssilla harjoituksilla. Samalla tutustuttiin myös
+              <strong>Laravel</strong>-frameworkiin. Sen lisäksi olen ollut mukana kouluprojektissa joissa
+              PHP/Laravel-osaamista tuli harjoiteltua lisää.<br><br>
+              Sen jälkeen PHP:tä on tullut harjoiteltua
+              WordPressin opettelun yhteydessä. Olen myös videotutoriaalin
+              avulla koodannut Laravelilla pientä blogi-sovellusta kerraten itse Laravelin rakennetta ja toimintaa.
+            </p>
+            <a href="https://github.com/sekuretto/PHP" class="btn btn-dark">Github</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h5><strong>Project Managing</strong></h5>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="card-text">Olen harjoitellut projektin hallintaa ryhmän kanssa useilla koulun kursseilla. Isoin ja
+              huikein projektinhallinnan kokemukseni oli kuitenkin kesällä 2019 harjoittelu JAMKin WIMMA Labissa, missä
+              toimin koko kesän oman tiimini team leaderinä saaden kokemusta <strong>agile/lean development</strong>
+              -menetelmiin (Kts.
+              <a href="#portfolio">Portfolio</a>: WIMMA Lab). Erityisesti kokemusta tuli sprinttien suunnittelusta ja
+              issue boardista, sekä
+              scrum- ja retrospective-palaverien pitämisestä oman tiimin työskentelyn seurannassa. Lisäksi
+              hoidin paljon tiimien välistä viestintää.<br><br>
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h5><strong>Linux / Ubuntu</strong></h5>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="card-text">Olen harjoitellut koulussa palvelimenhallintaa Linuxilla, erityisesti Ubuntulla. Osaan
+              konfiguroida ja hallinnoida Linuxilla pyörivää web-palvelinta.<br><br>
+              Olen myös kokeillut Linux Kalin työkaluja suljetussa verkossa kyberturvallisuuden kurssilla harjoitellen
+              tietoturvaa ja web-palvelun haavoittuvuuksien hakkerointia.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h5><strong>Android Studio / Kotlin</strong></h5>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+          <div class="card-body">
+            <img src="images/kotlin-1.svg" alt="Kotlin">
+            <p class="card-text">Koulun kurssilla opettelin sekä Android Studion käyttöä että Kotlin-kielen
+              perusteita. Kurssiharjoituksina rakensin pieniä Android-sovelluksen raakileita testaillen ja opetellen
+              Android-sovellusten rakennetta ja elementtien toimintaa.<br><br>
+              Android-kehitys voisi kiinnostaa minua jatkossakin, ja Kotlinia voisi opetella lisää.</p>
+            <a href="https://github.com/sekuretto/Android-Application-Development" class="btn btn-dark">Github</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h5><strong>SQL</strong></h5>
+            <div class="stars">
+              <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="far fa-star"></i> <i
+                class="far fa-star"></i>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="card-text">Olen harjoitellut koulussa MySQL:n käyttöä, ja rakentanut pienen tietokanta-sovelluksen
+              joka haki tietoa MySQL-tietokannasta.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h5><strong>Adobe / Inkscape /<br> Blender</strong></h5>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="card-text">Olen kokeillut Inkscapella svg-muotoisen grafiikan piirtämistä.<br><br>
+              Adoben ohjelmista olen kokeillut Photoshopia ja Premiere Prota, harjoitellen peruskuvankäsittelyä ja
+              videoeditointia.<br><br>
+              Blenderillä olen kokeillut 3D-mallinnusta parilla kurssiharjoituksella.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h5><strong>C#</strong></h5>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="card-text">Olen opetellut C#:n perusteet verkkokurssilla avoimen AMK:n kautta kurssitehtävillä
+              harjoitellen. En ole koodannut C#:lla mitään.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h5><strong>C++</strong></h5>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="card-text">Olen opetellut C++:n perusteet koulun kurssilla, ja koodannut sillä pienen
+              tietovisapelin.</p>
+          </div>
+        </div>
+      </div>
+
+    </article>
+  </section>
+
+  <section id="portfolio">
+    <article class="container-fluid content">
+      <h2 class="text-center mb-5">Portfolio &amp; Projects</h2>
+
+      <div class="project-grid">
+        <div class="card">
+          <img src="images/stockproject.png" class="card-img-top" alt="">
+          <div class="card-header">
+            <h5><strong>Stock Market Data</strong></h5>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-muted mb-3">Oma projekti, kevät 2021</h5>
+            <p class="card-text">Rekrytoinnin ennakkoharjoituksena noin kolmessa viikossa tekemäni pieni projekti, jossa
+              käsittelin
+              csv-muotoista osakehistoria-dataa. Tarkoituksena oli toteuttaa MVP-sovellus joka näyttää statistiikkaa
+              Applen
+              osakehintojen muutoksista, ja osaa hakea ja näyttää datan pohjalta vastauksia käyttäjän antamiin
+              kysymyksiin tietyllä
+              aikavälillä.<br><br>
+              Sovellus on toteutettu web-sovelluksena pelkästään vanilla JavaScriptillä, HTML:llä ja CSS:llä. Käytin
+              Fetch API:a datan hakemiseen ja AnyChart-kaaviokirjastoa datan näyttämiseen graafisesti.
+              Sovellus myös käsittelee dataa array methodeilla ja etsii vastauksia määriteltyihin kysymyksiin käyttäjän
+              antamien valintojen perusteella.<br><br>
+              Projekti harjoitti ja vahvisti osaamistani ja itsevarmuuttani JavaScriptin koodaamisessa, erityisesti sain
+              lisää harjoitusta array methodeista ja funktioista. Opin myös ymmärtämään osake-käsitteitä ja dataa.
+              Keskityin
+              sovelluksessa sen tehtävänannon mukaisen datan käsittelyyn, laskentafunktioiden toimintaan ja
+              käyttöliittymässä vaadittuun toiminnallisuuteen, joten sovellus on ulkonäöltään karu eikä myöskään
+              skaalaudu pienemmille näytöille. Myös koodin ja funktioiden rakenteessa on vielä korjattavaa.<br><br>
+              Aion jatkaa vielä sovelluksen kehittämistä - erityisesti sen ulkoasua ja koodirakenteen korjausta, ja
+              saatan myös käyttää sitä Reactin harjoitteluun kokeillen muokata sen toimimaan Reactilla.<br><br>
+              Dokumentaatio ja lähdekoodi:<br>
+              <a href="https://github.com/sekuretto/stockproject" class="btn btn-dark">Github</a>
+            </p>
+
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/portfolio-1.png" class="card-img-top" alt="">
+          <div class="card-header">
+            <h5><strong>WIMMA Lab (JAMK)</strong></h5>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-muted mb-3">Pengwin Media, Junior Web Developer/team leader, harjoittelu, kesä
+              2019</h5>
+            <p class="card-text">Pengwin Media -virtuaaliyrityksen projektin hallinta ja tiimin johtaminen JAMKin WIMMA
+              Lab -oppimisympäristössä touko-heinäkuun aikana kesällä 2019.<br>
+              <br>Pengwin Media toimii muita
+              ohjelmointitiimejä/virtuaaliyrityksiä konsultoivana
+              mediatalona WIMMA Lab -harjoitteluprojektiympäristön sisällä, ja tehtäviimme kuului webkehitys ja
+              käyttöliittymäsuunnittelu sekä WIMMA Labille että muille tiimeille. Käytännössä toteutimme WIMMA Labin ja
+              virtuaaliyritysten sekä toteutettujen ohjelmistoprojektien websivut, ja loimme käyttöliittymägrafiikkaa,
+              logoja ja mockuppeja yhteistyössä toisten tiimien kanssa. Tiimimme konsultoi ja toimi yhteistyössä toisten
+              tiimien kanssa myös varsinaisessa käyttöliittymien toteutuksessa.<br>
+              <br>
+              Lisäksi vastuullamme oli WIMMA Labin brändin ylläpito ja digimarkkinointi, jota varten huolehdimme WIMMA
+              Labin eri sosiaalisen median kanavista, ja tuotimme niihin mediasisältöä (valokuvaus ja videointi
+              editointeineen) ja julkaisuja. Lisäksi tuotimme myös sekä tiimeille että WIMMA Labille muuta graafista
+              materiaalia, kuten esitteitä ja käyntikortteja.<br>
+              <br>
+              Oma vastuualueeni oli Pengwin Media -tiimin johtaminen. Huolehdin siis tiimin projektinhallinnasta ja
+              aikataulutuksesta pyrkien pysymään kartalla tehtävien etenemisestä ja kaikista konsultointitarpeista
+              muille tiimeille. Huolehdin pääosin myös oman tiimini dokumentoinnista kesän ajalta, ja hoidin suurimmalta
+              osin tiimien välisen viestinnän sekä muut juoksevat asiat, tai edustin tiimiäni tapahtumissa ja
+              kokouksissa, jotta tiimini jäsenet saattoivat keskittyä varsinaisiin
+              sovittuihin tehtäviinsä. Kaiken ohessa pyrin osallistumaan Developer-roolissa myös tiimin yhdessä tekemiin
+              töihin ja web-kehitykseen aina kun ehdin - vähintäänkin auttaen ongelmanratkaisussa.<br><br>
+              Opettelin kesän aikana paljon agile/lean development -metodeja hallinnoiden tiimin issue boardia
+              ja suunnitellen sprinttejä, sekä pitäen tiimilleni päivittäiset scrum-kokoukset ja sprintien päätteeksi
+              retrospectivet. Lisäksi opin itsestäni paljon, sillä en ollut koskaan aiemmin ollut näin isossa
+              vastuuroolissa. Opin että minulla on ehkä enemmän johtamistaitoja ja rohkeutta kuin oletin,
+              ihmisläheisenä osaan
+              kuunnella ja ohjata tiimin toimintaa, sekä ratkoa ongelmia kannustaen silti itseohjautuvuuteen. Osaan myös
+              hyvin jäsentää laajoja tavoitteita, ja paloitella tehtäviä selkeämpään muotoon ja vaiheiksi, jotta
+              tavoitteissa päästään eteenpäin.<br>
+              Kaikin puolin huikea kokemus ja kesä mahtavan tiimin kanssa, ja olen ylpeä kaikesta mitä saatiin
+              aikaan!<br>
+              <br>
+              Websivut:<br>
+              <a href="http://www.wimmalab.org/">WIMMA Lab</a><br>
+              <a href="http://wimmalab.pages.labranet.jamk.fi/guides-and-info/">WIMMA Lab -guides</a><br>
+              <a href="http://pengwin.wimmalab.org/">Pengwin Media -website (2019)</a><br>
+              <a href="http://avoin.wimmalab.org/">WIMMA Lab Open Doors -landing page</a><br>
+              <br>
+              Dokumentaatio:<br>
+              <a href="https://gitlab.labranet.jamk.fi/wimma-lab-2019/pengwin/core/wikis/Pengwin-Media">Pengwin Media
+                JAMK
+                Gitlab Wiki</a> (vaatii käyttäjätunnukset JAMKin Gitlabiin)<br>
+              <a href="https://gitlab.labranet.jamk.fi/wimmalab">WIMMA Lab -websites (site, guides-and-info,
+                avoimetovet)
+                JAMK Gitlab</a><br>
+              <a href="https://gitlab.labranet.jamk.fi/wimma-lab-2019">WIMMA Lab 2019 (all virtual companies) JAMK
+                Gitlab</a><br>
+              <br>
+              Käyttöliittymäsuunnittelu, logot ja käyttövideot toisten tiimien ohjelmistoprojekteille:<br>
+              Overflow: <a href="https://www.youtube.com/watch?v=PUbhPWmNI3k">TACS (Tactical Airsoft Command
+                System)</a><br>
+              Iotitude: <a href="https://www.youtube.com/watch?v=1SsgsRt64xM">Jonoxi (mobile queuing)</a><br>
+              <br>
+              Sosiaalinen media ja sinne tuotettu sisältö kesältä 2019:<br>
+              <a href="https://www.youtube.com/channel/UCe0Ssog7DURm_aTiPO2hUFw">WIMMA Lab Youtube</a><br>
+              <a href="https://www.linkedin.com/company/wimmalab">WIMMA Lab LinkedIn</a><br>
+              <a href="https://twitter.com/wimmalab">WIMMA Lab Twitter</a><br>
+              <a href="https://www.instagram.com/wimmalab/">WIMMA Lab Instagram</a><br>
+              <a href="https://www.facebook.com/wimmalab/">WIMMA Lab Facebook</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/portfolio-2.png" class="card-img-top" alt="">
+          <div class="card-header">
+            <h5><strong>Wille (prototyyppi)</strong></h5>
+          </div>
+          <div class="card-body">
+            <h6 class="card-title text-muted mb-3">Projekti-kurssi (JAMK), Refil-tiimi, syyskuu 2018 - maaliskuu
+              2019</h6>
+            <p class="card-text">Yhteistyö JAMKin ja <a href="https://www.trimedia.fi/">Trimedia Oy</a>:n välillä
+              (projektisopimus).<br>
+              <br>
+              WordPress + ACF ja custom plugins/posts<br><br>
+              Dokumentaatio ja lähdekoodi:<br> <a href="https://github.com/sekuretto/Refil"
+                class="btn btn-dark">Github</a><br><br>
+              Käyttöliittymä-mockup (Figma): <a
+                href="https://www.figma.com/file/zF5n5CvPTRwBpRqLOtIJtU/Wille-Projekti-Refil-2018-2019?node-id=98%3A702">Refil/Wille</a><br><br>
+              Ohjelmistoprototyypin jatkokehitysoikeudet on Projekti-kurssin lopuksi luovutettu projektisopimuksen
+              nojalla Trimedia Oy:lle.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/portfolio-3.png" class="card-img-top" alt="">
+          <div class="card-header">
+            <h5><strong>Platz</strong></h5>
+          </div>
+          <div class="card-body">
+            <h6 class="card-title text-muted mb-3">Web-projekti 2 -kurssi (JAMK), ryhmäprojekti, kevät 2018</h6>
+            <p class="card-text">HTML, CSS, Bootstrap, MySQL, Laravel and UX design.<br><br>
+              Dokumentaatio ja lähdekoodi:<br>
+              <a href="https://github.com/sekuretto/Platz" class="btn btn-dark">Github</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </article>
+  </section>
+
+  <!-- <section id="image-gallery" class="bg-dark">
+    <article class="container-fluid content">
+      <h2 class="text-center mb-5">Image Gallery</h2>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/bg-masthead.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/close-up-photography-of-sleeping-tabby-cat-1056251.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/closeup-photo-of-black-and-blue-keyboard-1194713.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- Critical Role -->
+  <!-- <div class="mt-5">
+        <iframe width="500" height="300"
+          src="https://www.youtube.com/embed/i-p9lWIhcLQ?list=PL1tiwbzkOjQz7D0l_eLJGAISVtcL7oRu_" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div> -->
+  </article>
+  </section> -->
+
+  <section id="contact">
+    <article class="container-fluid content text-center">
+      <h3>Contact Information</h3><br>
+      <p><i class="fas fa-phone"></i> +358 44 995 9706</p>
+      <p> <i class="fas fa-envelope"></i> marja.jambeck(at)gmail.com</p>
+      <p><i class="fas fa-map-marker-alt"></i> Jyväskylä/Tampere, Finland</p>
+      <div class="social-link">
+        <a href="https://github.com/sekuretto">
+          <i class="fab fa-github fa-3x"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/marja-jambeck/">
+          <i class="fab fa-linkedin fa-3x"></i>
+        </a>
+        <a class="nav-link" href="https://critrole.com/"><i class="fab fa-critical-role fa-3x"></i></a>
+      </div>
+    </article>
+  </section>
+
+  <footer id="footer" class="sticky-bottom text-center">
+    <p class="text-muted small mt-3 mb-3">Copyright &copy; Marja Jämbeck (Sekuretto), 2021</p>
+  </footer>
 </body>
 
 <!-- Bootstrap JavaScript Bundle -->
