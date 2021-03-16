@@ -1,11 +1,5 @@
 @import 'config';
 
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
-
 .navbar {
 	font-family: $font;
 	&-brand,
@@ -14,6 +8,11 @@
 	}
 	&-text {
 		margin: 0 100px 0 200px;
+	}
+	.dropdown-item {
+		i {
+			margin-right: 10px;
+		}
 	}
 }
 
@@ -65,6 +64,9 @@
 #skills,
 #image-gallery {
 	color: $soft-white;
+	.description {
+		text-align: center;
+	}
 }
 
 @import 'gridcard';

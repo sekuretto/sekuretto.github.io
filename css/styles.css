@@ -1,10 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 .navbar {
   font-family: "Raleway", sans-serif;
 }
@@ -14,6 +8,9 @@
 }
 .navbar-text {
   margin: 0 100px 0 200px;
+}
+.navbar .dropdown-item i {
+  margin-right: 10px;
 }
 
 .showcase {
@@ -62,6 +59,10 @@
 #skills,
 #image-gallery {
   color: #dadada;
+}
+#skills .description,
+#image-gallery .description {
+  text-align: center;
 }
 
 .project-grid, .skills-grid {

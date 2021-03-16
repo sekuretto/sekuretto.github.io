@@ -20,6 +20,15 @@ Päädyin lopulta käyttämään tässä Bootstrapin card-elementtejä. Kukin ko
 Myös sivun pääkuvan (header/showcase) asemoinnin viilaamiseen meni jonkin verran aikaa, kun testailin CSS:n avulla sen kokoa ja background-määrityksiä. Tässä kohdassa käytin apuna myös W3Schoolsin How To -opasta [Hero Imagen](https://www.w3schools.com/howto/howto_css_hero_image.asp) teosta, ja tummensin kuvaa hieman lisää jotta sen päällä oleva teksti erottuu selvemmin. Käytin showcase-kuvan päällä olevassa pääotsikko-tekstissä myös hieman pehmeämpää valkoista väriä kuin puhdasta valkoista, joka erottuu kuvasta hyvin mutta ei kuitenkaan "loista" tumman kuvan päällä. 
 
 
+Päivän verran lisää kulutin aikaa Sassin muokkaamiseen. Aloitin työn ensin vain Bootstrapilla ja muokkasin omia tyylejä erilliseen CSS-tiedostoon. Yksi päivä kului aikaa siihen, kun otin Sassin käyttöön ja käänsin tämän oman CSS-tiedostoni Sassiksi. Sassin kääntämällä uudella styles.css -tiedostolla korvasin sitten alkuperäisen CSS-tiedostoni.
+
+Jaoin Sass-tiedostoni seuraavalla tavalla:  
+- style.scss: päätiedosto josta CSS käännetään, sisältää perus tyylit nav ja header(showcase) -osioiden tyyleille, sekä eri section -osioiden tyyleille  
+- _config.scss: konfiguraatio-tyylit eli fontit ja muuttujat väreille  
+- _gridcard.scss: sisältää tyylit grid-muotoiluille korttialueille sekä itse korteille  
+- _media.scss: kaikki media queryt
+
+
 ## Teknologiavalinnat perusteluineen
 
 ### Bootstrap
