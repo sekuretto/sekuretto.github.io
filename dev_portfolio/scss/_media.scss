@@ -61,8 +61,16 @@
 		display: block;
 		margin: auto;
 	}
+}
 
-	.card {
-		justify-content: left;
+@media only screen and (max-width: 500px) {
+	.card-header {
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	#about img {
+		width: 250px;
 	}
 }
