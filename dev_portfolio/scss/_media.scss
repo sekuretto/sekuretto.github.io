@@ -23,12 +23,15 @@
 	}
 }
 
+@media only screen and (max-width: 1000px) {
+	.skills-grid {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
 @media only screen and (max-width: 960px) {
 	#about img {
 		width: 350px;
-	}
-	.skills-grid {
-		grid-template-columns: repeat(1, 1fr);
 	}
 }
 
@@ -53,10 +56,10 @@
 		margin-left: 20px;
 	}
 
-	#about {
-		display: flex;
-		align-items: center;
-		justify-content: center;
+	#about img {
+		float: none;
+		display: block;
+		margin: auto;
 	}
 
 	.card {
