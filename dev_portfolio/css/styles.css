@@ -1,12 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+.navbar {
+  font-family: "Raleway", sans-serif;
+}
 .navbar-brand,
-.nav-link {
+.navbar .nav-link {
   margin-left: 50px;
 }
-
 .navbar-text {
   margin: 0 100px 0 200px;
 }
@@ -14,20 +19,17 @@
 .showcase {
   height: 100vh;
   width: 100%;
-  /* display: block; */
   /* darken effect on image to make text over image show better */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/bg-masthead.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/bg-masthead.jpg");
   background-position: center;
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
   background-size: cover;
 }
-
 .showcase-text {
   position: absolute;
   top: 40%;
 }
-
 .showcase h1 {
   color: #dadada;
   font-size: 5rem;
@@ -36,19 +38,9 @@
   margin: 0;
   padding: 0;
 }
-
 .showcase h3,
 .showcase i {
   color: #dadada;
-}
-
-#about .btn-dark {
-  padding: 15px;
-}
-
-#skills,
-#image-gallery {
-  color: #fff;
 }
 
 .content {
@@ -60,42 +52,40 @@
   float: right;
   width: 400px;
   height: auto;
-  border: 1px dotted black;
-  margin: 0px 0px 15px 35px;
+  border: 1px dotted #000;
+  margin: 0 0 15px 35px;
+}
+#about .btn-dark {
+  padding: 15px;
 }
 
-.skills-grid,
-.project-grid {
+#skills,
+#image-gallery {
+  color: #dadada;
+}
+
+.project-grid, .skills-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /* grid-template-rows: repeat(2, 1fr); */
   grid-gap: 50px;
-}
-
-.skills-grid img {
-  float: right;
-  width: 70px;
-  max-height: 70px;
-  margin: 5px;
-}
-
-.project-grid {
-  grid-template-columns: repeat(2, 1fr);
 }
 
 .card {
   padding: 10px;
   border-radius: 15px;
+  color: #000;
 }
 
-.project-grid .card {
-  border: 1px dotted black;
+.skills-grid {
+  grid-template-columns: repeat(3, 1fr);
 }
-
-.project-grid .card img {
-  width: 100%;
-  margin: 0;
-  border: none;
+.skills-grid .stars {
+  color: #d6b600;
+}
+.skills-grid img {
+  float: right;
+  width: 70px;
+  max-height: 70px;
+  margin: 5px;
 }
 
 .card-header {
@@ -104,48 +94,34 @@
   padding-right: 25px;
 }
 
-.card-header,
-.card-body {
-  background-color: #fff;
-  color: #000;
+.project-grid {
+  grid-template-columns: repeat(2, 1fr);
 }
-
-.stars {
-  color: #d6b600;
+.project-grid .card {
+  border: 1px dotted #000;
 }
 
 .social-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #000;
 }
-
 .social-link a {
   color: #000;
   text-decoration: none;
   padding: 20px;
 }
 
-
-/* @media only screen and (max-width: 1600px) {
-  .showcase {
-    height: 95vh;
-  }
-} */
-
 @media only screen and (max-width: 1730px) {
   .navbar-text {
     display: none;
   }
 }
-
 @media only screen and (max-width: 1500px) {
   .skills-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
 @media only screen and (max-width: 1100px) {
   #about img {
     width: 300px;
@@ -159,7 +135,6 @@
     grid-template-columns: repeat(1, 1fr);
   }
 }
-
 @media only screen and (max-width: 960px) {
   .skills-grid {
     grid-template-columns: repeat(1, 1fr);
@@ -169,7 +144,6 @@
     width: 90%;
   }
 }
-
 @media only screen and (max-width: 690px) {
   .showcase-text {
     top: 35%;
@@ -178,8 +152,19 @@
   .showcase h1 {
     font-size: 4rem;
   }
-
+}
+@media only screen and (max-width: 680px) {
   #about img {
-    width: 240px;
+    float: none;
+    margin: 0 20% 0 20%;
+    text-align: center;
   }
 }
+@media only screen and (max-width: 550px) {
+  #about img {
+    width: 250px;
+    margin: 0;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
