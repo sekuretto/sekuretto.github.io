@@ -1,0 +1,60 @@
+@media only screen and (max-width: 1730px) {
+	.navbar-text {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 1500px) {
+	.skills-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media only screen and (max-width: 1100px) {
+	#about img {
+		width: 300px;
+	}
+
+	.content {
+		width: 85%;
+	}
+
+	.project-grid {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+@media only screen and (max-width: 960px) {
+	.skills-grid {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.content {
+		width: 90%;
+	}
+}
+
+@media only screen and (max-width: 690px) {
+	.showcase-text {
+		top: 35%;
+	}
+
+	.showcase h1 {
+		font-size: 4rem;
+	}
+}
+
+@media only screen and (max-width: 680px) {
+	#about img {
+		float: none;
+		margin: 0 20% 0 20%;
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 550px) {
+	#about img {
+		width: 250px;
+		margin: 0;
+	}
+}
