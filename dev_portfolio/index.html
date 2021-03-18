@@ -32,9 +32,9 @@
           <li class="nav-item">
             <a class="nav-link" href="#portfolio">Portfolio</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="#image-gallery">Image Gallery</a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
           </li>
@@ -216,12 +216,11 @@
               Reactilla pienen task tracker -sovelluksen opetellen Reactin perusrakennetta. Olen aloittanut
               Udemy-kurssin jatkaakseni Reactin oppimista lisää. Toistaiseksi olen vasta tutustunut propseihin,
               stateihin ja hookseihin.<br><br>
-              Reactin opettelun yhteydessä saanut olen saanut kosketusta myös <strong>Node.js</strong>:n käyttöön, mutta
-              tarvitsen senkin
-              osalta vielä roimasti harjoitusta ja aion jatkaa siihenkin tutustumista Reactin rinnalla.<br><br>
+              Reactin ja Sassin opettelun yhteydessä saanut olen saanut kosketusta myös <strong>Node.js</strong>:n
+              käyttöön, mutta tarvitsen senkin osalta vielä roimasti harjoitusta ja aion jatkaa siihenkin tutustumista
+              Reactin rinnalla.<br><br>
               Reactin ohella minua kiinnostavat myös <strong>Vue, TypeScript ja Angular</strong>, ja aion kokeilla niitä
-              ja jatkaa
-              opiskeluani niihin ehkä Reactin jälkeen.
+              ja jatkaa opiskeluani niihin ehkä Reactin jälkeen.
             </p>
             <a href="https://github.com/sekuretto/React" class="btn btn-dark">Github</a>
           </div>
@@ -460,6 +459,30 @@
 
       <div class="project-grid">
         <div class="card">
+          <img src="images/portfolio.png" class="card-img-top" alt="">
+          <div class="card-header">
+            <h5><strong>Portfolio-websivu</strong></h5>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-muted mb-3">Oma projekti, kevät 2021</h5>
+            <p class="card-text">Tämän portfolio-websivun päivitys. Vanha versio oli rakennettu ilmaisella Bootstrap
+              portfolioteemalla <a href="https://startbootstrap.com/theme/stylish-portfolio">Stylish Portfolio</a>,
+              johon olin vain lisännyt oman sisällön.
+              Pidin vanhan sivuversion ulkonäöstä ja rakenteesta, mutta halusin rakentaa sivut nyt uudestaan omana
+              taidonnäytteenäni alusta asti
+              ihan itse ja samalla pohtia sivun rakennetta ja visuaalisuutta, sekä uusia sisältöä.<br><br>
+              Sivujen koodauksessa käytetty Bootstrapia (v. 5.0.0-beta2), ja sen rakenteita ja komponetteja joilla
+              rakensin sivurakenteen. Muokkasin Bootstrapin omia tyylejä omilla CSS-tyyleilläni. Harjoittelin samalla
+              Sassin käyttöä, ja käytin Node.js/npm:ää kääntääkseni Sass-tiedostot CSS:ksi. Sivun sisällössä
+              harjoittelin myös Gridin käyttöä. Sivut on julkaistu Githubin github-pagesin päälle.<br><br>
+              Lähdekoodi:<br>
+              <a href="https://github.com/sekuretto/sekuretto.github.io" class="btn btn-dark">Github</a>
+            </p>
+
+          </div>
+        </div>
+
+        <div class="card">
           <img src="images/stockproject.png" class="card-img-top" alt="">
           <div class="card-header">
             <h5><strong>Stock Market Data</strong></h5>
@@ -606,7 +629,7 @@
     </article>
   </section>
 
-  <section id="image-gallery" class="bg-dark">
+  <!-- <section id="image-gallery" class="bg-dark">
     <article class="container-fluid content">
       <h2 class="text-center mb-5">Image Gallery</h2>
       <p class="description">Kuvagalleria elämästäni ja kiinnostuksenkohteistani.</p>
@@ -618,16 +641,26 @@
             aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
             aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+            aria-label="Slide 5"></button>
         </div>
         <div class="carousel-inner">
+          <div class="carousel-item">
+            <img src="images/20200415_104316.jpg" class="d-block w-100" alt="Final Fantasy XIV Shadowbringers">
+          </div>
           <div class="carousel-item active">
-            <img src="images/bg-masthead.jpg" class="d-block w-100" alt="...">
+            <img src="images/2020-06-15.png" class="d-block w-100" alt="Sekuretto Miqo'te Ninja (FFXIV)">
           </div>
           <div class="carousel-item">
-            <img src="images/close-up-photography-of-sleeping-tabby-cat-1056251.jpg" class="d-block w-100" alt="...">
+            <img src="images/IMG_20201114_225147.jpg" class="d-block w-100" alt="Critical Role">
           </div>
           <div class="carousel-item">
-            <img src="images/closeup-photo-of-black-and-blue-keyboard-1194713.jpg" class="d-block w-100" alt="...">
+            <img src="images/IMG_20190717_100417.jpg" class="d-block w-100" alt="WIMMA Lab muistoja">
+          </div>
+          <div class="carousel-item">
+            <img src="images/2020-11-07.png" class="d-block w-100" alt="Sekuretto Night Elf Druid (WoW)">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -642,15 +675,15 @@
         </button>
       </div>
 
-      <!-- Critical Role:
+       Critical Role:
     <div class="mt-5">
         <iframe width="500" height="300"
           src="https://www.youtube.com/embed/i-p9lWIhcLQ?list=PL1tiwbzkOjQz7D0l_eLJGAISVtcL7oRu_" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
-      </div> -->
+      </div>
     </article>
-  </section>
+  </section> -->
 
   <section id="contact">
     <article class="container-fluid content text-center">
