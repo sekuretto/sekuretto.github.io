@@ -64,6 +64,9 @@
 }
 
 @media only screen and (max-width: 500px) {
+	.content {
+		width: 90%;
+	}
 	.card-header {
 		display: block;
 	}
