@@ -1,0 +1,105 @@
+@import 'config';
+
+.navbar {
+	font-family: $font;
+	&-brand,
+	.nav-link {
+		margin-left: 50px;
+	}
+	&-text {
+		margin: 0 100px 0 200px;
+	}
+	.dropdown-item {
+		i {
+			margin-right: 10px;
+		}
+	}
+}
+
+.showcase {
+	height: 100vh;
+	width: 100%;
+	/* darken effect on image to make text over image show better */
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/bg-masthead.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	/* background-attachment: fixed; */
+	background-size: cover;
+	&-text {
+		position: absolute;
+		top: 40%;
+	}
+	h1 {
+		color: $soft-white;
+		font-size: 5rem;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin: 0;
+		padding: 0;
+	}
+	h3,
+	i {
+		color: $soft-white;
+	}
+}
+
+.content {
+	width: 75%;
+	padding: 70px 30px;
+}
+
+#about {
+	img {
+		float: right;
+		width: 450px;
+		height: auto;
+		margin: 0 20px 35px 35px;
+	}
+	.btn-dark {
+		padding: 15px;
+	}
+}
+
+#skills,
+#image-gallery {
+	color: $soft-white;
+	.description {
+		text-align: center;
+	}
+}
+
+@import 'gridcard';
+
+.social-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	a {
+		color: #000;
+		text-decoration: none;
+		padding: 20px;
+	}
+}
+
+#toTop {
+	display: none; /* Hidden by default */
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	background-color: #000;
+	color: white;
+	cursor: pointer;
+	padding: 10px 20px;
+	border-radius: 10px;
+	font-size: 18px;
+	&:hover {
+		background-color: #555;
+	}
+}
+
+@import 'imagemodal';
+
+@import 'media';

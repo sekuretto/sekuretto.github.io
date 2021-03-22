@@ -41,16 +41,6 @@
 	}
 }
 
-@media only screen and (max-width: 690px) {
-	.showcase-text {
-		top: 35%;
-	}
-
-	.showcase h1 {
-		font-size: 4rem;
-	}
-}
-
 @media only screen and (max-width: 700px) {
 	.navbar-brand {
 		margin-left: 20px;
@@ -60,6 +50,16 @@
 		float: none;
 		display: block;
 		margin: auto;
+	}
+}
+
+@media only screen and (max-width: 690px) {
+	.showcase-text {
+		top: 35%;
+	}
+
+	.showcase h1 {
+		font-size: 4rem;
 	}
 }
 

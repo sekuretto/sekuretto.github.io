@@ -55,12 +55,10 @@
   padding: 15px;
 }
 
-#skills,
-#image-gallery {
+#skills {
   color: #dadada;
 }
-#skills .description,
-#image-gallery .description {
+#skills .description {
   text-align: center;
 }
 
@@ -112,6 +110,26 @@
   padding: 20px;
 }
 
+#toTop {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #000;
+  color: white;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+#toTop:hover {
+  background-color: #555;
+}
+
 @media only screen and (max-width: 1770px) {
   .navbar-text {
     display: none;
@@ -150,15 +168,6 @@
     width: 280px;
   }
 }
-@media only screen and (max-width: 690px) {
-  .showcase-text {
-    top: 35%;
-  }
-
-  .showcase h1 {
-    font-size: 4rem;
-  }
-}
 @media only screen and (max-width: 700px) {
   .navbar-brand {
     margin-left: 20px;
@@ -168,6 +177,15 @@
     float: none;
     display: block;
     margin: auto;
+  }
+}
+@media only screen and (max-width: 690px) {
+  .showcase-text {
+    top: 35%;
+  }
+
+  .showcase h1 {
+    font-size: 4rem;
   }
 }
 @media only screen and (max-width: 500px) {

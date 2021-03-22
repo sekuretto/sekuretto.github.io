@@ -46,11 +46,11 @@
               </li>
               <li><a class="dropdown-item" href="https://www.linkedin.com/in/marja-jambeck/"><i
                     class="fab fa-linkedin"></i> LinkedIn</a></li>
-              <li>
+              <!-- <li>
                 <hr class="dropdown-divider">
               </li>
               <li><a class="dropdown-item" href="https://critrole.com/"><i class="fab fa-critical-role"></i> Critical
-                  Role</a></li>
+                  Role</a></li> -->
             </ul>
           </li>
         </ul>
@@ -475,6 +475,7 @@
               rakensin sivurakenteen. Muokkasin Bootstrapin omia tyylejä omilla CSS-tyyleilläni. Harjoittelin samalla
               Sassin käyttöä, ja käytin Node.js/npm:ää kääntääkseni Sass-tiedostot CSS:ksi. Sivun sisällössä
               harjoittelin myös Gridin käyttöä. Sivut on julkaistu Githubin github-pagesin päälle.<br><br>
+              Sivu on vielä kehittelyssä, sillä yritän rakentaa sivuille vielä kuvagalleriaa.<br><br>
               Lähdekoodi:<br>
               <a href="https://github.com/sekuretto/sekuretto.github.io" class="btn btn-dark">Github</a>
             </p>
@@ -633,55 +634,6 @@
     <article class="container-fluid content">
       <h2 class="text-center mb-5">Image Gallery</h2>
       <p class="description">Kuvagalleria elämästäni ja kiinnostuksenkohteistani.</p>
-      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-            aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-            aria-label="Slide 5"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item">
-            <img src="images/20200415_104316.jpg" class="d-block w-100" alt="Final Fantasy XIV Shadowbringers">
-          </div>
-          <div class="carousel-item active">
-            <img src="images/2020-06-15.png" class="d-block w-100" alt="Sekuretto Miqo'te Ninja (FFXIV)">
-          </div>
-          <div class="carousel-item">
-            <img src="images/IMG_20201114_225147.jpg" class="d-block w-100" alt="Critical Role">
-          </div>
-          <div class="carousel-item">
-            <img src="images/IMG_20190717_100417.jpg" class="d-block w-100" alt="WIMMA Lab muistoja">
-          </div>
-          <div class="carousel-item">
-            <img src="images/2020-11-07.png" class="d-block w-100" alt="Sekuretto Night Elf Druid (WoW)">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-
-       Critical Role:
-    <div class="mt-5">
-        <iframe width="500" height="300"
-          src="https://www.youtube.com/embed/i-p9lWIhcLQ?list=PL1tiwbzkOjQz7D0l_eLJGAISVtcL7oRu_" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
-      </div>
     </article>
   </section> -->
 
@@ -698,8 +650,8 @@
         <a href="https://www.linkedin.com/in/marja-jambeck/">
           <i class="fab fa-linkedin fa-3x"></i>
         </a>
-        <!-- <a href="https://critrole.com/"><i class="fab fa-critical-role fa-3x"></i></a> -->
       </div>
+      <button onclick="returnToTop()" id="toTop" title="Takaisin sivun alkuun">&uarr;</button>
     </article>
   </section>
 
@@ -710,5 +662,6 @@
 
 <!-- Bootstrap JavaScript Bundle -->
 <script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
 
 </html>

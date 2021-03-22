@@ -1,0 +1,66 @@
+%grid {
+	display: grid;
+	grid-gap: 50px;
+}
+
+%card {
+	padding: 10px;
+	border-radius: 15px;
+	color: #000;
+}
+
+.skills-grid {
+	@extend %grid;
+	grid-template-columns: repeat(3, 1fr);
+	.stars {
+		color: $star;
+	}
+	img {
+		float: right;
+		width: 70px;
+		max-height: 70px;
+		margin: 5px;
+	}
+}
+
+.card {
+	@extend %card;
+	&-header {
+		display: flex;
+		justify-content: space-between;
+		padding-right: 25px;
+		// background-color: #fff;
+	}
+}
+
+.project-grid {
+	@extend %grid;
+	grid-template-columns: repeat(2, 1fr);
+	.card {
+		border: 1px dotted #000;
+	}
+}
+
+//IMAGE GALLERY
+#image-gallery {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 5px;
+	.column {
+		flex: 25%;
+		max-width: 33.3%;
+		padding: 0 5px;
+	}
+	img {
+		margin-top: 10px;
+		width: 100%;
+		height: 300px;
+		// max-height: 100vw;
+		object-fit: cover;
+		cursor: pointer;
+		transition: 0.3s;
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+}

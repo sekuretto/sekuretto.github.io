@@ -60,8 +60,7 @@
 	}
 }
 
-#skills,
-#image-gallery {
+#skills {
 	color: $soft-white;
 	.description {
 		text-align: center;
@@ -78,6 +77,25 @@
 		color: #000;
 		text-decoration: none;
 		padding: 20px;
+	}
+}
+
+#toTop {
+	display: none; /* Hidden by default */
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	background-color: #000;
+	color: white;
+	cursor: pointer;
+	padding: 10px 20px;
+	border-radius: 10px;
+	font-size: 18px;
+	&:hover {
+		background-color: #555;
 	}
 }
 
