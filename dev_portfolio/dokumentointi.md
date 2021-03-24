@@ -15,11 +15,11 @@ Websivun koko rakenteen suunnitteluun ja sisältöön minun ei juuri tarvinnut k
 
 Kokonaisuudessaan harjoitustyön tekoon kului noin kuukausi, kun tein sitä muun koulutyön ja töidenhaun ohessa. Välillä omistin harjoitustyön teolle kokonaisen työpäivän kerrallaan ja vielä illallakin innostuttuani koodaamaan tai kirjoittamaan sisältöä. Välillä taas tein työtä muutaman tunnin kerrallaan eri päivinä.
 
-Tarkemmin eriteltynä harjoitustyön rakenteluun kului vähän yli viikko, jos mittaan työskentelyäni karkeasti työpäivinä. Sivun perusrakenteen koodaamiseen Bootstrapin elementtien avulla ja vanhaa portfoliota mukaillen meni yhteensä noin neljä päivää. Pääosa tästä eli noin pari päivää meni pelkästään sivun sisällön tuotantoon ja muokkaamiseen ja media queryjen viilaamiseen. Samalla kaiken koodailun rinnalla tein alusta asti myös työn dokumentointia kirjoitellen muistiinpanoja työn eri vaiheista ja etenemisestä. 
+Tarkemmin eriteltynä harjoitustyön rakenteluun kului vajaa pari viikkoa, jos mittaan työskentelyäni karkeasti työpäivinä. Sivun perusrakenteen koodaamiseen Bootstrapin elementtien avulla ja vanhaa portfoliota mukaillen meni yhteensä noin neljä päivää. Pääosa tästä eli noin pari päivää meni pelkästään sivun sisällön tuotantoon ja muokkaamiseen ja media queryjen viilaamiseen. Samalla kaiken koodailun rinnalla tein alusta asti myös työn dokumentointia kirjoitellen muistiinpanoja työn eri vaiheista ja etenemisestä. 
 
-Merkittävin kehitystyön vaihe oli sivujeni Skills-osio, jonka suunnitteluun ja rakenteluun kului kaksi päivää, mukaanluettuna sisällöntuotanto. Aloitin työn ensin tekemällä sivun tyylimäärittelyt pelkästään Bootstrapin omilla tyyleillä, joita muokkailin tarpeellisissa kohdissa omalla CSS:llä. Kun sivun rakenne ja sisältö alkoi olla kasassa, otin tässä vaiheessa käyttöön myös Sassin harjoitellakseni sen käyttöä. Yksi päivä kului kokonaisuudessaan siihen, kun muunsin kaiken siihenastisen sivulla käyttämäni oman CSS:ni Sassiksi, josta sitten käänsin sivulle uuden tyylitiedoston. Tässä vaiheessa työ alkoi olla pääpiirteissään ja sisällöltään jo valmis, ja julkaisin sivun Githubin pagesissa. Harjoitustyönä jatkoin silti sivun ja Sassin viilailua vielä suunnilleen kaksi päivää, pohtien ja testaillen Sassilla vielä sivun asetteluja ja korjaillen pikkuvirheitä. Toinen päivistä kului vielä pelkkään media queryjen lisäilyyn ja villaamiseen, jotta sain sisällön ja varsinkin kuvat asettumaan hyvin myös pienillä puhelimennäytöillä.   
+Merkittävin kehitystyön vaihe oli sivujeni Skills-osio, jonka suunnitteluun ja rakenteluun kului kaksi päivää, mukaanluettuna sisällöntuotanto. Aloitin harjoitustyön ensin tekemällä sivun tyylimäärittelyt pelkästään Bootstrapin omilla tyyleillä, joita muokkailin tarpeellisissa kohdissa omalla CSS:llä. Kun sivun rakenne ja sisältö alkoi olla kasassa, otin tässä vaiheessa käyttöön myös Sassin harjoitellakseni sen käyttöä. Yksi päivä kului kokonaisuudessaan siihen, kun muunsin kaiken siihenastisen sivulla käyttämäni oman CSS:ni Sassiksi, josta sitten käänsin sivulle uuden tyylitiedoston. Tässä vaiheessa työ alkoi olla pääpiirteissään ja sisällöltään jo valmis, ja julkaisin sivun Githubin pagesissa. Harjoitustyönä jatkoin silti sivun ja Sassin viilailua vielä suunnilleen kaksi päivää, pohtien ja testaillen Sassilla vielä sivun asetteluja ja korjaillen pikkuvirheitä. Toinen päivistä kului vielä pelkkään media queryjen lisäilyyn ja villaamiseen, jotta sain sisällön ja varsinkin kuvat asettumaan hyvin myös pienillä puhelimennäytöillä.   
 
-Viimeisenä kulutin yhden päivän kirjoittaen kuntoon ja valmiiksi harjoitustyön dokumentaatiota. Kun siis lasken yhteen nämä karkeat työpäivät, kului harjoitustyön tekoon suunnilleen 10 päivää.
+Viimeisenä kulutin pari päivää kirjoittaen kuntoon ja valmiiksi harjoitustyön dokumentaatiota. Kun siis lasken yhteen nämä karkeat työpäivät, kului harjoitustyön tekoon suunnilleen 11 päivää.
 
 
 
@@ -27,9 +27,9 @@ Viimeisenä kulutin yhden päivän kirjoittaen kuntoon ja valmiiksi harjoitusty�
 ## Teknologiavalinnat perusteluineen
 
 ### Bootstrap
-Käytin harjoitustyössä Bootstrapin uusinta versiota (v5.0.0-beta2). Uusimman version käyttäminen tarkoitti totta kai, että minulla oli käytettävissäni uusin Bootstrapin dokumentaatio sivujen rakentamisen apuna, ja sivut pysyvät myös pitempään yhteensopivina ja vakaina.  
+Käytin harjoitustyössä Bootstrapin uusinta versiota (v5.0.0-beta2). Uusimman version käyttäminen tarkoitti totta kai, että minulla oli käytettävissäni uusin Bootstrapin dokumentaatio sivujen rakentamisen apuna, ja sivut pysyvät myös pitempään yhteensopivina ja vakaina. Latasin Bootstrapin lähdetiedostot ja kopioin Bootstrapin päätiedoston bootstrap.min.css sivujen CSS-kansioon, josta Bootstrap-tyylit siis ladataan oman tyylitiedostoni kanssa. Luonnollisesti täytyi kopioida myös Bootstrapin käyttämä JavaScript-tiedosto lähdetiedostoista. Mutta käyttäen näitä kutistettuja lähdetiedostoja suoraan omasta sivustorakenteestani ja samalta palvelimelta, pyrin siihen ettei sivujen latautumiseen tulisi minkäänlaista viivettä tai kaatumisen riskiä kuin voisi olla jos käyttäisin Bootstrapia pelkän CDN-linkin kautta.   
 
-Otin siis Bootstrapin elementteineen työhöni mukaan jo alusta asti, ja rakensin sivujen perusrakenteen sillä. Omalla CSS:llä ja Sassilla lähdin sitten muokkaamaan Bootstrapin elementtejä niiltä osin kuin tarvetta ilmeni, ja lisäsin myös omaa toiminnallisuutta elementteihin. Lisäksi hyödynsin Bootstrapin omia tyylejä ja classeja omien sivuelementtieni tyylien pohjana, millä tavoin sain vähennettyä kirjoitettavan CSS:n määrää. Mikä osaltaan taas vähensi päällekkäisten tyylimääritysten määrää ja selaimen turhaa tyylien ylikirjoittamista.  
+Otin siis Bootstrapin elementteineen työhöni mukaan jo alusta asti, ja rakensin sivujen perusrakenteen sillä ja sen elementeillä, sekä myös HTML:n semanttisella rakenteella. Omalla CSS:llä ja Sassilla lähdin sitten muokkaamaan käyttämiäni Bootstrapin elementtejä niiltä osin kuin tarvetta ilmeni, ja lisäsin myös omaa toiminnallisuutta elementteihin. Lisäksi hyödynsin Bootstrapin omia tyylejä ja classeja omien sivuelementtieni tyylien pohjana, millä tavoin sain vähennettyä kirjoitettavan CSS:n määrää. Mikä osaltaan taas vähensi päällekkäisten tyylimääritysten määrää ja selaimen turhaa tyylien ylikirjoittamista.  
 
 Sivuille sijoitetuissa ikoneissa (kuten Github/LinkedIn) käytin Font Awesome -ikonikirjastoa. Bootstrapissa on toki olemassa omakin ikonikirjasto, mutta olen käyttänyt Font Awesomea usein jo aikaisemminkin, ja se on mielestäni ilmaisversionakin vielä laajempi ja huomattavasti monipuolisempi kuin muut olemassaolevat ikonikirjastot.  
 
@@ -38,14 +38,14 @@ Sivuille sijoitetuissa ikoneissa (kuten Github/LinkedIn) käytin Font Awesome -i
 
 Hyödynsin Flexboxia ja Gridiä tarpeen mukaan.
 
-Flexboxia on hyödynnetty Skills-osion card-elementtien otsikoiden ja tähtien asettelussa, sekä social-link ikonien asettelussa, jotta ne on saatu aseteltua samalla riville siististi.
+Flexboxia on hyödynnetty Skills-osion card-elementtien otsikoiden ja tähtien asettelussa, sekä social-link ikonien asettelussa, jotta ne on saatu aseteltua samalle riville siististi.  
 
 Gridiä hyödynsin sekä Skills- että Projects-osioiden korttien asettelussa, jotta niiden koko ja asemointi skaalautuu hyvin eri näyttökoossa.
 
 
 ### Selaintuki & skaalautuvuus
 
-Bootstrap v5 ei tue Internet Explorer-selainta, mutta tukee IE:n korvaavaa Edgeä. Koska IE on tosiaan vähitellen poistumassa historiaan, eikä sen käyttöä enää edes suositella, totesin tämän harjoitustyön kannaltakin että selaintuki IE:lle tuskin enää on tarpeellinen.  
+Bootstrap v5.0 ei tue Internet Explorer-selainta, mutta tukee IE:n korvaavaa Edgeä. Koska IE on tosiaan vähitellen poistumassa historiaan, eikä sen käyttöä enää edes suositella, totesin tämän harjoitustyön kannaltakin että selaintuki IE:lle tuskin enää on tarpeellinen.  
 
 [Bootstrap v5.0](https://getbootstrap.com/docs/5.0/getting-started/browsers-devices/) tukee mobiilissa Androidin osalta Chromea, Firefoxia ja Android-selainta/WebViewtä. Desktopissa tukee Windowsin osalta Chromea, Firefoxia, Microsoft Edgeä ja Operaa. Koin että jos huolehdin skaalautuvuudesta ja selaintuesta ainakin näille selaimille ja alustoille, erityisesti Chromelle, Firefoxille ja Edgelle sekä mobile-versiona Androidille, se olisi riittävä selaintuen laajuus.  
 
@@ -61,24 +61,29 @@ Sivut on julkaistu myös [Githubiin](https://github.com/sekuretto/sekuretto.gith
 
 ### SASS  
 
-Päätin pyrkiä käyttämään Sassia harjoitustyössä harjoitellakseni lisää sen käyttöä, ja koska jo Sassia harjoitellessa pidin sen modulaarisesta rakenteesta. Käytin Sassia asentamalla koneelle Node.js:n, ja Visual Studio Codella npm:n, jolloin saatoin asentaa ja käyttää Sassia suoraan Visual Studio Coden konsolista. Tämä oli käytettävyydeltäänkin ehdottomasti paras ja vakain tapa käyttää Sassia, koska olin Web-visualisoinnin H8-tehtävässä kokeillut myös Visual Studio Coden -lisäosaa Live Sass Compiler, joka ajoi sekin kyllä asiansa mutta oli 
+Päätin pyrkiä käyttämään Sassia harjoitustyössä harjoitellakseni lisää sen käyttöä, ja koska jo Sassia harjoitellessa pidin sen modulaarisesta rakenteesta. Käytin Sassia asentamalla koneelle Node.js:n, ja Visual Studio Codella npm:n, jolloin saatoin asentaa ja käyttää Sassia suoraan Visual Studio Coden konsolista. Tämä oli käytettävyydeltäänkin ehdottomasti paras ja vakain tapa käyttää Sassia, koska olin Web-visualisoinnin H8-tehtävässä kokeillut myös Visual Studio Coden -lisäosaa Live Sass Compiler, joka ajoi sekin kyllä asiansa mutta oli silti epävakaampi ja altis kaatumaan koska ilman terminaali-ikkunaa sen koodinseurantaa ei meinannut muistaa pysäyttää jos vaikka poisti Sass-tiedostoja, joka sitten aiheutti lisäosan kaatumisen.  
 
-- CSS animointi
-- visuaalisuus (kuvat, animaatio, typografia, Google Material Design)
-- hyvä skaalautuvuus ja selaintuki (mobile first!)
-- omaa SVG-grafiikkaa  
-- visuaalisuutta ja käyttöliittymäsuunnittelua mietitty  
-- optimointi:  https://developers.google.com/speed/pagespeed/  
-- raportoinnissa opiskelija osaa vertailla ja perustella valintojansa
+Jaoin Sass-tiedostoni seuraavalla tavalla:  
+- style.scss: päätiedosto josta CSS käännetään, sisältää perus tyylit nav ja header(showcase) -osioiden tyyleille, sekä eri section -osioiden tyyleille  
+- _config.scss: konfiguraatio-tyylit eli fontit ja muuttujat väreille  
+- _gridcard.scss: sisältää tyylit grid-muotoiluille korttialueille (Skills & Projects) sekä itse korteille  
+- _media.scss: kaikki media queryt  
+
+Koin Sassin hyödyllisyyden tämän laajuisen websivun rakentamisessa ehkä vielä vähän laihaksi. Sassin harjoittelun ja ymmärtämisen kannalta se ehdottomasti oli hyödyksi, ja sain kuitenkin harjoiteltua muuttujien ja importtien, vähän jopa extendien käyttöä sekä tietenkin Sassin hallintaa yleisesti. Tämän laajuisessa työssä kuitenkaan ole ehkä ihan niin merkittävästi CSS:ää, että muutoin olisi käyttöhyötyä siitä että käyttää Sassia ja pilkkoo CSS:ää sen sijaan että olisi vain käyttänyt tavallista CSS:ää. Ehdottomasti sain kuitenkin hyvää harjoitusta Sassin käyttöön, ja tämän jälkeen käytän sitä mielelläni missä tahansa muussakin webprojektissa jos vain mahdollista.  
+
+Pohdin Sassin muokkaamisen yhteydessä myös sitä, että Bootstrapin lähdekoodinkin olisi voinut asentaa npm:n kautta ja päästä sitä kautta käsiksi ja muokkaamaan Sassilla suoraan myös vaikka Bootstrapin värejä ja muuttujia, kuten [Bootstrapin omasta dokumentaatiosta](https://getbootstrap.com/docs/5.0/customize/sass/) näkyy. Näin olisin ehkä voinut rakentaa suoraan Bootstrapin pohjalta sivuilleni oman custom Sassin, sen sijaan että Bootstrap ja oma CSS/Sassini ovat nyt erillään. Pohdin kuitenkin että koska sivuni on vain portfolio-sivu eikä siksi laajuudeltaan mitenkään iso, olisi tälläinen Bootstrapin suora kustomointi ehkä turhan työläs kokeilu sivujeni kokoon nähden. Ei toki ole poissuljettua, että jos vielä kehitän sivujani, että myöhemmin kokeilisin Bootstrapin kustomointia vielä.  
 
 
 ### Visuaalisuus ja siihen liittyvät valinnat perusteluineen  
+
+Hain kaikessa sivuni suunnittelussa sitä, että sivuni näyttäisi ammattimaiselta ja siistiltä, koska kyseessä on kuitenkin työnantajille esiteltävä portfoliosivu. Halusin että eri sivun osiot näkyvät eroteltuna selkeästi toisistaan, ja myös koska sivulla on kuitenkin paljon kirjoitettua sisältöä, halusin visuaalisesti pitää huolen siitä että tekstillä ja elementeillä sekä sivun eri osioilla  on
+Visuaalisessa mielessä huolehdin paljon siitä, että sivun eri osioiden ja elementtien ympärillä oli sopivasti tilaa. varsinkin sivun sivuilla. Näin siksi, että elementeillä on ns. "tilaa hengittää" ja sivu sisältöineen ei näytä ahtaalta ja täyteen pakatulta. 
 
 Erityisesti vanhan portfolioni Skills-, ja Portfolio-osiot kaipasivat mielestäni muutosta. Halusin lisätä Skills-osioon kullekin teknologia-osaamiseni osa-alueelle jonkinlaisen näkyvän mittarin taitoni vahvuudesta, jotta käyttäessäni sivujani työnhaussa ja mahdollinen työnantaja vierailee sivuillani hän saisi jo nopealla vilkaisulla kuvan taidoistani. Visuaalisesti selkein vaihtoehto tällaiselle mittarille oli mielestäni jonkinlainen 1-5 arvosanan skaala, esim. 1-5 tähteä riippuen taidon määrästä. Vaihtoehtona mietin myös progress-barien käyttöä tällaisena mittarina.  
 
 https://www.w3schools.com/howto/howto_css_hero_image.asp  
 
-Visuaalisessa mielessä huolehdin paljon siitä, että sivun eri osioiden ja elementtien ympärillä oli sopivasti tilaa. varsinkin sivun sivuilla. Näin siksi, että elementeillä on ns. "tilaa hengittää" ja sivu sisältöineen ei näytä ahtaalta ja täyteen pakatulta. 
+
 
 Aloitus 18.2.2021 ->  lopetus 22.3.2021
 
@@ -98,20 +103,21 @@ Kuvagalleria: 1 päivä.
 
 Dokumentointi: 1 päivä + varsinaisen koodaustyön ohessa tehdyt muistiinpanot etenemisestä
 
-Jaoin Sass-tiedostoni seuraavalla tavalla:  
-- style.scss: päätiedosto josta CSS käännetään, sisältää perus tyylit nav ja header(showcase) -osioiden tyyleille, sekä eri section -osioiden tyyleille  
-- _config.scss: konfiguraatio-tyylit eli fontit ja muuttujat väreille  
-- _gridcard.scss: sisältää tyylit grid-muotoiluille korttialueille sekä itse korteille  
-- _media.scss: kaikki media queryt
-
 
 ### Pagespeed
 
-Testasin alkuperäisen portfolion Pagespeed-tulokset:  
-pagespeed_original_desktop.png  
-pagespeed_original_mobile.png  
+Testasin alkuperäisen portfolion Pagespeed-tulokset Githubissa:  
+[!Desktop](pagespeed_original_desktop.png)  
+[!Mobile](pagespeed_original_mobile.png)  
 
-Pyrin harjoitustyössäni parantamaan tuloksia. Varsinkin mobile-version tulosta oli parannettava. Rehellisesti en alkuperäisen websivun luomisen yhteydessä ollut lainkaan tullut pohtineeksi sivujen toimivuutta tai kuvatiedostojen kokoa nopeuden kannalta, joten nyt oli harjoitustyössä hyvä tilaisuus siihenkin. Mobiiliversio kaipasi tuloksen perusteella erityisesti juuri grafiikan optimointia ja ylimääräisen koodin siivousta.
+Pyrin harjoitustyössäni parantamaan tuloksia. Varsinkin mobile-version tulosta oli parannettava. Rehellisesti en alkuperäisen websivun luomisen yhteydessä ollut lainkaan tullut pohtineeksi sivujen toimivuutta tai kuvatiedostojen kokoa nopeuden kannalta, joten nyt oli harjoitustyössä hyvä tilaisuus siihenkin. Mobiiliversio kaipasi tuloksen perusteella erityisesti juuri grafiikan optimointia ja ylimääräisen koodin siivousta.  
+
+Parannukset Pagespeed-tuloksiin:  
+[!Desktop_new](pagespeed_new_desktop.png)  
+[!Mobile_new](pagespeed_new_mobile.png)  
+
+
+
 
 ## Yleisiä mietteitä työn kulusta ja mitä tuli opittua
 
@@ -125,7 +131,15 @@ Aikataulu:
 etukäteen Figma-mallia ja Bootstrapin testailua sivun header-rakenteeseen  
 Aloitus 18.2.2021 ->  lopetus ?.3.2021  
 
-ähän ylimääräisenä työnä kului vielä päivä eräänlaiseen jatkokehittelyn suunnitteluun, koska pohdin myös kuvagalleria-osion lisäämistä sivuille ja testailin jo senkin koodausta ja asettelua yhdeksi osioksi sivulle. Ajatuksenani oli rakentaa sivulle vielä grid-muotoinen image gallery-osio, josta kunkin kuvan voisi avata omaan modal-ikkunaan Päätin kuitenkin jättää sen kehittelyn vielä tämän harjoitustyön ulkopuolelle.
+Vähän ylimääräisenä työnä kului vielä päivä eräänlaiseen jatkokehittelyn suunnitteluun, koska pohdin myös kuvagalleria-osion lisäämistä sivuille ja testailin jo senkin koodausta ja asettelua yhdeksi osioksi sivulle. Ajatuksenani oli rakentaa sivulle vielä grid-muotoinen image gallery-osio, josta kunkin kuvan voisi avata omaan modal-ikkunaan Päätin kuitenkin jättää sen kehittelyn vielä tämän harjoitustyön ulkopuolelle.  
+
+- CSS animointi
+- visuaalisuus (kuvat, animaatio, typografia, Google Material Design)
+- hyvä skaalautuvuus ja selaintuki (mobile first!)
+- omaa SVG-grafiikkaa  
+- visuaalisuutta ja käyttöliittymäsuunnittelua mietitty  
+- optimointi:  https://developers.google.com/speed/pagespeed/  
+- raportoinnissa opiskelija osaa vertailla ja perustella valintojansa
 
 
 ## Arvosanaehdotus itselle perusteluineen
