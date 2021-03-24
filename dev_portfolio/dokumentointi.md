@@ -9,7 +9,7 @@ Screenshot alkuperäisestä portfoliosta:
 Alkuperäisen portfolioni lähdekoodi on nähtävissä [Githubin repositoriossani](https://github.com/sekuretto/sekuretto.github.io) kansiossa old_portfolio.  
 
 Screenshot uudesta portfoliosta:  
-![Screenshot alkuperäisestä portfoliosta](new_mobile.png)  
+![Screenshot uudesta portfoliosta](new_mobile.png)  
 
 
 
