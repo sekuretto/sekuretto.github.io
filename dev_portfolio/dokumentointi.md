@@ -5,11 +5,11 @@ Alkuperäinen portfolioni (https://sekuretto.github.io/) kaipasi päivitystä, j
 
 Screenshot alkuperäisestä portfoliosta:  
 ![Screenshot alkuperäisestä portfoliosta](original_mobile.png)  
-
-Alkuperäisen portfolioni lähdekoodi on nähtävissä [Githubin repositoriossani](https://github.com/sekuretto/sekuretto.github.io) kansiossa old_portfolio.  
-
+  
 Screenshot uudesta portfoliosta:  
 ![Screenshot uudesta portfoliosta](new_mobile.png)  
+
+Alkuperäisen portfolioni lähdekoodi on nähtävissä [Githubin repositoriossani](https://github.com/sekuretto/sekuretto.github.io) kansiossa old_portfolio. 
 
 
 
