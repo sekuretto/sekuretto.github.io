@@ -24,6 +24,10 @@
 }
 
 @media only screen and (max-width: 1000px) {
+	.showcase {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+			url('../images/bg-masthead_small.png');
+	}
 	.skills-grid {
 		grid-template-columns: repeat(1, 1fr);
 	}
