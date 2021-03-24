@@ -19,7 +19,7 @@ Tarkemmin eriteltynä harjoitustyön rakenteluun kului vajaa pari viikkoa, jos m
 
 Merkittävin kehitystyön vaihe oli sivujeni Skills-osio, jonka suunnitteluun ja rakenteluun kului kaksi päivää, mukaanluettuna sisällöntuotanto. Aloitin harjoitustyön ensin tekemällä sivun tyylimäärittelyt pelkästään Bootstrapin omilla tyyleillä, joita muokkailin tarpeellisissa kohdissa omalla CSS:llä. Kun sivun rakenne ja sisältö alkoi olla kasassa, otin tässä vaiheessa käyttöön myös Sassin harjoitellakseni sen käyttöä. Yksi päivä kului kokonaisuudessaan siihen, kun muunsin kaiken siihenastisen sivulla käyttämäni oman CSS:ni Sassiksi, josta sitten käänsin sivulle uuden tyylitiedoston. Tässä vaiheessa työ alkoi olla pääpiirteissään ja sisällöltään jo valmis, ja julkaisin sivun Githubin pagesissa. Harjoitustyönä jatkoin silti sivun ja Sassin viilailua vielä suunnilleen kaksi päivää, pohtien ja testaillen Sassilla vielä sivun asetteluja ja korjaillen pikkuvirheitä. Toinen päivistä kului vielä pelkkään media queryjen lisäilyyn ja villaamiseen, jotta sain sisällön ja varsinkin kuvat asettumaan hyvin myös pienillä puhelimennäytöillä.   
 
-Viimeisenä kulutin pari päivää kirjoittaen kuntoon ja valmiiksi harjoitustyön dokumentaatiota. Kun siis lasken yhteen nämä karkeat työpäivät, kului harjoitustyön tekoon suunnilleen 11 päivää.
+Viimeisenä kulutin muutaman päivän kirjoittaen kuntoon ja valmiiksi harjoitustyön dokumentaatiota. Kun siis lasken yhteen nämä karkeat työpäivät, kului harjoitustyön tekoon suunnilleen 12 päivää.
 
 
 
@@ -76,8 +76,12 @@ Pohdin Sassin muokkaamisen yhteydessä myös sitä, että Bootstrapin lähdekood
 
 ### Visuaalisuus ja siihen liittyvät valinnat perusteluineen  
 
-Hain kaikessa sivuni suunnittelussa sitä, että sivuni näyttäisi ammattimaiselta ja siistiltä, koska kyseessä on kuitenkin työnantajille esiteltävä portfoliosivu. Halusin että eri sivun osiot näkyvät eroteltuna selkeästi toisistaan, ja myös koska sivulla on kuitenkin paljon kirjoitettua sisältöä, halusin visuaalisesti pitää huolen siitä että tekstillä ja elementeillä sekä sivun eri osioilla  on
-Visuaalisessa mielessä huolehdin paljon siitä, että sivun eri osioiden ja elementtien ympärillä oli sopivasti tilaa. varsinkin sivun sivuilla. Näin siksi, että elementeillä on ns. "tilaa hengittää" ja sivu sisältöineen ei näytä ahtaalta ja täyteen pakatulta. 
+Sivun visuaalisuus ja värimaailma määräytyi pitkälti otsikkokuvan (bg-masthead.jpg) pohjalta, joka on Pexels -kuvapankkipalvelusta jo aiempaan portfolioversioon etsimäni ja siellä käyttämäni kuva. (Kuvan alkuperäinen sijainti: https://www.pexels.com/fi-fi/kuva/apple-etatyo-kannettava-tietokone-koodaus-169573/) Valitsin kuvan aikanaan, koska pidin sen neutraalista harmaasta/tummasta värimaailmasta ja kuvan aihe läppäreineen, muistikirjoineen ja kahvikuppeineen oli ammattimaisen oloinen ja kuvasi mielestäni hyvin IT-alan opiskelijan elämää portfoliokuvana. Käytän kuvaa sivuillani siis ns. hero imagena sivun pääotsikon eli nimeni taustana. Käytin apuna myös W3Schoolsin How To -opasta [Hero Imagen](https://www.w3schools.com/howto/howto_css_hero_image.asp) teosta, ja tummensin kuvaa hieman lisää jotta sen päällä oleva teksti erottuu selvemmin. Käytin kuvan päällä olevassa pääotsikko-tekstissä myös hieman pehmeämpää valkoista väriä (#dadada) kuin puhdasta valkoista, joka erottuu kuvasta hyvin mutta ei kuitenkaan "loista" silmiä rasittavasti tumman kuvan päällä. Kuvaa mukaillen halusin käyttää sivulla myös pääasiallisesti Bootstrapin tummaa teemaa, josta tuli navigaatiopalkin väri.  
+Sivujeni pääväreiksi muodostui siis lopulta Bootstrapin oma Dark-teemaväri (#212529) sekä pehmeä valkoinen (#dadada).
+
+Hain kaikessa sivuni suunnittelussa sitä, että sivuni näyttäisi ammattimaiselta ja siistiltä, koska kyseessä on kuitenkin työnantajille esiteltävä portfoliosivu. Halusin että eri sivun osiot näkyvät eroteltuna selkeästi toisistaan, ja myös koska sivulla on kuitenkin paljon kirjoitettua sisältöä, halusin visuaalisessa mielessä pitää huolen siitä että tekstillä ja elementeillä sekä sivun eri osioilla on ns. "tilaa hengittää" ja sivu sisältöineen ei näyttäisi ahtaalta ja täyteen pakatulta.
+
+
 
 Erityisesti vanhan portfolioni Skills-, ja Portfolio-osiot kaipasivat mielestäni muutosta. Halusin lisätä Skills-osioon kullekin teknologia-osaamiseni osa-alueelle jonkinlaisen näkyvän mittarin taitoni vahvuudesta, jotta käyttäessäni sivujani työnhaussa ja mahdollinen työnantaja vierailee sivuillani hän saisi jo nopealla vilkaisulla kuvan taidoistani. Visuaalisesti selkein vaihtoehto tällaiselle mittarille oli mielestäni jonkinlainen 1-5 arvosanan skaala, esim. 1-5 tähteä riippuen taidon määrästä. Vaihtoehtona mietin myös progress-barien käyttöä tällaisena mittarina.  
 
@@ -93,7 +97,7 @@ Sivun perusrakenteen koodaamiseen Bootstrapin elementtien avulla ja vanhaa portf
 Skills-osio:
 Päädyin lopulta käyttämään tässä Bootstrapin card-elementtejä. Kukin kortti on siis nimetty tietyn taidon/ohjelmointikielen/työkalun mukaan, ja kyseisessä kortissa kerron lyhyesti osaamisestani ja mitä mahdollisesti olen tehnyt tällä taidolla. Visuaalisemman saan korteista kun lisäsin niiden otsikoihin myös taitotason mittariksi tähdet, jotka siis osoittavat asteikolla 1-5 arvioimani oman taitotasoni kunkin kortin taitolle. Korttien sisällössä voin myös avata 
 
-Myös sivun pääkuvan (header/showcase) asemoinnin viilaamiseen meni jonkin verran aikaa, kun testailin CSS:n avulla sen kokoa ja background-määrityksiä. Tässä kohdassa käytin apuna myös W3Schoolsin How To -opasta [Hero Imagen](https://www.w3schools.com/howto/howto_css_hero_image.asp) teosta, ja tummensin kuvaa hieman lisää jotta sen päällä oleva teksti erottuu selvemmin. Käytin showcase-kuvan päällä olevassa pääotsikko-tekstissä myös hieman pehmeämpää valkoista väriä kuin puhdasta valkoista, joka erottuu kuvasta hyvin mutta ei kuitenkaan "loista" tumman kuvan päällä. 
+Myös sivun pääkuvan (header/showcase) asemoinnin viilaamiseen meni jonkin verran aikaa, kun testailin CSS:n avulla sen kokoa ja background-määrityksiä. Tässä kohdassa  
 
 
 Päivän verran lisää kulutin aikaa Sassin muokkaamiseen. Aloitin työn ensin vain Bootstrapilla ja muokkasin omia tyylejä erilliseen CSS-tiedostoon. Yksi päivä kului aikaa siihen, kun otin Sassin käyttöön ja käänsin tämän oman CSS-tiedostoni Sassiksi. Sassin kääntämällä uudella styles.css -tiedostolla korvasin sitten alkuperäisen CSS-tiedostoni.
@@ -107,14 +111,14 @@ Dokumentointi: 1 päivä + varsinaisen koodaustyön ohessa tehdyt muistiinpanot 
 ### Pagespeed
 
 Testasin alkuperäisen portfolion Pagespeed-tulokset Githubissa:  
-[!Desktop](pagespeed_original_desktop.png)  
-[!Mobile](pagespeed_original_mobile.png)  
+![Desktop](pagespeed_original_desktop.png)  
+![Mobile](pagespeed_original_mobile.png)  
 
-Pyrin harjoitustyössäni parantamaan tuloksia. Varsinkin mobile-version tulosta oli parannettava. Rehellisesti en alkuperäisen websivun luomisen yhteydessä ollut lainkaan tullut pohtineeksi sivujen toimivuutta tai kuvatiedostojen kokoa nopeuden kannalta, joten nyt oli harjoitustyössä hyvä tilaisuus siihenkin. Mobiiliversio kaipasi tuloksen perusteella erityisesti juuri grafiikan optimointia ja ylimääräisen koodin siivousta.  
+Tuloksissa oli siis jonkin verran parannettavaa, ja tavoitteeni oli harjoitustyössäni korjata tilannetta. Varsinkin mobile-version tulosta oli parannettava. Rehellisesti en alkuperäisen websivun luomisen yhteydessä ollut lainkaan tullut pohtineeksi sivujen toimivuutta tai kuvatiedostojen kokoa nopeuden kannalta, joten nyt oli harjoitustyössä hyvä tilaisuus siihenkin. Mobiiliversio kaipasi tuloksen perusteella erityisesti juuri grafiikan optimointia sekä ylimääräisen koodin siivousta.   
 
 Parannukset Pagespeed-tuloksiin:  
-[!Desktop_new](pagespeed_new_desktop.png)  
-[!Mobile_new](pagespeed_new_mobile.png)  
+![Desktop_new](pagespeed_new_desktop.png)  
+![Mobile_new](pagespeed_new_mobile.png)  
 
 
 
