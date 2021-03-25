@@ -51,8 +51,20 @@
   height: auto;
   margin: 0 20px 35px 35px;
 }
+#about .indent {
+  text-indent: 1em;
+}
+#about a {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px #000 dashed;
+}
+#about a:visited {
+  color: #000;
+}
 #about .btn-dark {
   padding: 15px;
+  color: #dadada;
 }
 
 #skills {
@@ -119,15 +131,11 @@
   z-index: 99;
   border: none;
   outline: none;
-  background-color: #000;
-  color: white;
+  background-color: #555;
   cursor: pointer;
   padding: 10px 20px;
   border-radius: 10px;
-  font-size: 18px;
-}
-#toTop:hover {
-  background-color: #555;
+  font-size: 20px;
 }
 
 @media only screen and (max-width: 1770px) {
