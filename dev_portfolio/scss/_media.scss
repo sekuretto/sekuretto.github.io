@@ -24,16 +24,16 @@
 }
 
 @media only screen and (max-width: 1000px) {
-	.showcase {
-		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-			url('../images/bg-masthead_small.png');
-	}
 	.skills-grid {
 		grid-template-columns: repeat(1, 1fr);
 	}
 }
 
 @media only screen and (max-width: 960px) {
+	.showcase {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+			url('../images/pexels-negative-space-169573_medium.jpg');
+	}
 	#about img {
 		width: 350px;
 	}
@@ -58,12 +58,18 @@
 }
 
 @media only screen and (max-width: 690px) {
-	.showcase-text {
-		top: 35%;
+	.showcase {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+			url('../images/pexels-negative-space-169573_small.jpg');
 	}
-
 	.showcase h1 {
 		font-size: 4rem;
+	}
+}
+
+@media only screen and (max-width: 550px) {
+	.showcase-text {
+		top: 35%;
 	}
 }
 
