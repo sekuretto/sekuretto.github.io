@@ -1,4 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+#about a:not(.btn),
+#skills a:not(.btn),
+#portfolio a:not(.btn) {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px #000 dashed;
+}
+#about a:visited:not(.btn),
+#skills a:visited:not(.btn),
+#portfolio a:visited:not(.btn) {
+  color: #000;
+}
+
 .navbar {
   font-family: "Raleway", sans-serif;
 }
@@ -54,17 +67,8 @@
 #about .indent {
   text-indent: 1em;
 }
-#about a {
-  color: #000;
-  text-decoration: none;
-  border-bottom: 1px #000 dashed;
-}
-#about a:visited {
-  color: #000;
-}
 #about .btn-dark {
   padding: 15px;
-  color: #dadada;
 }
 
 #skills {
@@ -131,11 +135,14 @@
   z-index: 99;
   border: none;
   outline: none;
-  background-color: #555;
+  background-color: #000 !important;
   cursor: pointer;
   padding: 10px 20px;
   border-radius: 10px;
   font-size: 20px;
+}
+#toTop:hover {
+  background-color: #555 !important;
 }
 
 @media only screen and (max-width: 1770px) {

@@ -3,3 +3,12 @@
 $font: 'Raleway', sans-serif;
 $soft-white: #dadada;
 $star: #d6b600;
+
+%link {
+	color: #000;
+	text-decoration: none;
+	border-bottom: 1px #000 dashed;
+	&:visited {
+		color: #000;
+	}
+}

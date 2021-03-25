@@ -49,6 +49,15 @@
 	padding: 70px 30px;
 }
 
+#about,
+#skills,
+#portfolio {
+	//every a element that is not class .btn
+	a:not(.btn) {
+		@extend %link;
+	}
+}
+
 #about {
 	img {
 		float: right;
@@ -59,17 +68,8 @@
 	.indent {
 		text-indent: 1em;
 	}
-	a {
-		color: #000;
-		text-decoration: none;
-		border-bottom: 1px #000 dashed;
-		&:visited {
-			color: #000;
-		}
-	}
 	.btn-dark {
 		padding: 15px;
-		color: $soft-white;
 	}
 }
 
@@ -101,14 +101,14 @@
 	z-index: 99;
 	border: none;
 	outline: none;
-	background-color: #555;
+	background-color: #000 !important;
 	cursor: pointer;
 	padding: 10px 20px;
 	border-radius: 10px;
 	font-size: 20px;
-	// &:hover {
-	// 	background-color: #555;
-	// }
+	&:hover {
+		background-color: #555 !important;
+	}
 }
 
 @import 'media';
