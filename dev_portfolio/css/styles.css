@@ -145,6 +145,10 @@
   background-color: #555 !important;
 }
 
+.footer {
+  font: "Raleway", sans-serif;
+}
+
 @media only screen and (max-width: 1770px) {
   .navbar-text {
     display: none;
