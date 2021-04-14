@@ -15,12 +15,19 @@
 .navbar {
   font-family: "Raleway", sans-serif;
 }
-.navbar-brand,
-.navbar .nav-link {
+.navbar-brand {
   margin-left: 50px;
 }
 .navbar-text {
   margin: 0 100px 0 200px;
+}
+.navbar .nav-link {
+  margin: 0 50px;
+  padding-left: 15px;
+}
+.navbar .nav-link:hover {
+  background-color: #313131 !important;
+  border-radius: 5px;
 }
 .navbar .dropdown-item i {
   margin-right: 10px;
@@ -63,12 +70,14 @@
   width: 450px;
   height: auto;
   margin: 0 20px 35px 35px;
+  box-shadow: 5px 5px 10px 2px #dadada;
 }
 #about .indent {
   text-indent: 1em;
 }
 #about .btn-dark {
   padding: 15px;
+  box-shadow: 5px 5px 10px 2px #dadada, -1px -1px 2px #dadada;
 }
 
 #skills {
@@ -92,6 +101,9 @@
 .skills-grid {
   grid-template-columns: repeat(3, 1fr);
 }
+.skills-grid .card-header {
+  border-radius: 10px;
+}
 .skills-grid .stars {
   color: #d6b600;
 }
@@ -102,6 +114,9 @@
   margin: 5px;
 }
 
+.card {
+  box-shadow: 5px 5px 10px 2px #000, -1px -1px 2px #000;
+}
 .card-header {
   display: flex;
   justify-content: space-between;
@@ -113,6 +128,7 @@
 }
 .project-grid .card {
   border: 1px dotted #000;
+  box-shadow: 5px 5px 10px 2px #dadada, -1px -1px 2px #dadada;
 }
 
 .social-link {
@@ -137,9 +153,10 @@
   outline: none;
   background-color: #000 !important;
   cursor: pointer;
-  padding: 10px 20px;
+  padding: 5px 16px;
   border-radius: 10px;
   font-size: 20px;
+  box-shadow: 2px 2px 5px #555, -1px -1px 2px #555;
 }
 #toTop:hover {
   background-color: #555 !important;

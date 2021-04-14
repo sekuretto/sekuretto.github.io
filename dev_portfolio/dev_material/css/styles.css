@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+#about a:not(.btn),
+#skills a:not(.btn),
+#portfolio a:not(.btn) {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px #000 dashed;
+}
+#about a:visited:not(.btn),
+#skills a:visited:not(.btn),
+#portfolio a:visited:not(.btn) {
+  color: #000;
+}
+
+.navbar {
+  font-family: "Raleway", sans-serif;
+}
+.navbar-brand,
+.navbar .nav-link {
+  margin-left: 50px;
+}
+.navbar-text {
+  margin: 0 100px 0 200px;
+}
+.navbar .dropdown-item i {
+  margin-right: 10px;
+}
+
+.showcase {
+  height: 100vh;
+  width: 100%;
+  /* darken effect on image to make text over image show better */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/pexels-negative-space-169573.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-size: cover;
+}
+.showcase-text {
+  position: absolute;
+  top: 40%;
+}
+.showcase h1 {
+  color: #dadada;
+  font-size: 5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+.showcase h3,
+.showcase i {
+  color: #dadada;
+}
+
+.content {
+  width: 75%;
+  padding: 70px 30px;
+}
+
+#about img {
+  float: right;
+  width: 450px;
+  height: auto;
+  margin: 0 20px 35px 35px;
+}
+#about .indent {
+  text-indent: 1em;
+}
+#about .btn-dark {
+  padding: 15px;
+}
+
+#skills {
+  color: #dadada;
+}
+#skills .description {
+  text-align: center;
+}
+
+.project-grid, .skills-grid {
+  display: grid;
+  grid-gap: 50px;
+}
+
+.card {
+  padding: 10px;
+  border-radius: 15px;
+  color: #000;
+}
+
+.skills-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+.skills-grid .stars {
+  color: #d6b600;
+}
+.skills-grid img {
+  float: right;
+  width: 70px;
+  max-height: 70px;
+  margin: 5px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 25px;
+}
+
+.project-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+.project-grid .card {
+  border: 1px dotted #000;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-link a {
+  color: #000;
+  text-decoration: none;
+  padding: 20px;
+}
+
+#toTop {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #000 !important;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+#toTop:hover {
+  background-color: #555 !important;
+}
+
+.footer {
+  font: "Raleway", sans-serif;
+}
+
+@media only screen and (max-width: 1770px) {
+  .navbar-text {
+    display: none;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 1500px) {
+  .project-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media only screen and (max-width: 1400px) {
+  #about img {
+    width: 400px;
+  }
+
+  .content {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .skills-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media only screen and (max-width: 960px) {
+  .showcase {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/pexels-negative-space-169573_medium.jpg");
+  }
+
+  #about img {
+    width: 350px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  #about img {
+    width: 280px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .navbar-brand {
+    margin-left: 20px;
+  }
+
+  #about img {
+    float: none;
+    display: block;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 690px) {
+  .showcase {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/pexels-negative-space-169573_small.jpg");
+  }
+
+  .showcase h1 {
+    font-size: 4rem;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .showcase-text {
+    top: 35%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .content {
+    width: 90%;
+  }
+
+  .card-header {
+    display: block;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #about img {
+    width: 250px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

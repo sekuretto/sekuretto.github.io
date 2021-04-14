@@ -12,6 +12,9 @@
 .skills-grid {
 	@extend %grid;
 	grid-template-columns: repeat(3, 1fr);
+	.card-header {
+		border-radius: 10px;
+	}
 	.stars {
 		color: $star;
 	}
@@ -25,6 +28,7 @@
 
 .card {
 	@extend %card;
+	box-shadow: 5px 5px 10px 2px #000, -1px -1px 2px #000;
 	&-header {
 		display: flex;
 		justify-content: space-between;
@@ -38,5 +42,6 @@
 	grid-template-columns: repeat(2, 1fr);
 	.card {
 		border: 1px dotted #000;
+		box-shadow: 5px 5px 10px 2px #dadada, -1px -1px 2px #dadada;
 	}
 }

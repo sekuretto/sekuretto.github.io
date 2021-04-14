@@ -2,12 +2,19 @@
 
 .navbar {
 	font-family: $font;
-	&-brand,
-	.nav-link {
+	&-brand {
 		margin-left: 50px;
 	}
 	&-text {
 		margin: 0 100px 0 200px;
+	}
+	.nav-link {
+		margin: 0 50px;
+		padding-left: 15px;
+		&:hover {
+			background-color: #313131 !important;
+			border-radius: 5px;
+		}
 	}
 	.dropdown-item {
 		i {
@@ -64,12 +71,14 @@
 		width: 450px;
 		height: auto;
 		margin: 0 20px 35px 35px;
+		box-shadow: 5px 5px 10px 2px #dadada;
 	}
 	.indent {
 		text-indent: 1em;
 	}
 	.btn-dark {
 		padding: 15px;
+		box-shadow: 5px 5px 10px 2px #dadada, -1px -1px 2px #dadada;
 	}
 }
 
@@ -103,9 +112,10 @@
 	outline: none;
 	background-color: #000 !important;
 	cursor: pointer;
-	padding: 10px 20px;
+	padding: 5px 16px;
 	border-radius: 10px;
 	font-size: 20px;
+	box-shadow: 2px 2px 5px #555, -1px -1px 2px #555;
 	&:hover {
 		background-color: #555 !important;
 	}
