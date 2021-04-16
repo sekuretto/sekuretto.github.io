@@ -30,15 +30,17 @@ Vanha portfolio tosiaan seurasi tätä samaa rakennetta.
 
 Websivun koko rakenteen suunnitteluun ja sisältöön minun ei juuri tarvinnut käyttää aikaa, koska tosiaan hyödynsin pohjana jo aiempaa portfolio-sivuani. Käytin kuitenkin Figmaa, sekä Web-visualisointi -kurssin WV-H7 ja WV-H10-tehtäviä hyödykseni pohtiessani mitä muutoksia nyt tekisin sivun rakenteeseen tai ulkonäköön. Siksi minulla oli työtä aloittaessa jo aika selkeä kuva sivun rakenteesta sekä ulkonäöllisesti että HTML:n semanttisen rakenteen kannalta, joten aikaa ei kulunut työn aikana niin paljon erinnäiseen sivurakenteiden asettelujen testailuun tai ulkonäkövalintojen mietintään kuin olisi voinut kulua, jos olisin lähtenyt liikkeelle aivan tyhjästä ja ilman aiempaa sivuversiota. Lisäksi työtäni siivitti se, että halusin saada sivun julkaistavaan kuntoon mahdollisimman nopeasti, jotta voisin käyttää sitä työnhaun apuna ja taitojen näytteenä mahdollisimman nopeasti vanhan sivuversion tilalla.    
 
-Kokonaisuudessaan harjoitustyön tekoon kului noin kuukausi, kun tein sitä muun koulutyön ja töidenhaun ohessa. Välillä omistin harjoitustyön teolle kokonaisen työpäivän kerrallaan ja vielä illallakin innostuttuani koodaamaan tai kirjoittamaan sisältöä. Välillä taas tein työtä muutaman tunnin kerrallaan eri päivinä.
+Kokonaisuudessaan harjoitustyön tekoon kului noin pari kuukautta, kun tein sitä muun koulutyön ja töidenhaun ohessa. En kuitenkaan lähtenyt seuraamaan ajankäyttöäni työn aikana kovinkaan tarkasti tuntitasolla. Välillä omistin harjoitustyön teolle kokonaisen työpäivän kerrallaan ja vielä illallakin innostuttuani koodaamaan tai kirjoittamaan sisältöä. Välillä taas tein työtä muutaman tunnin kerrallaan eri päivinä. Ja varsinkin loppua kohti, kun harjoitustyön teossa oli jäljellä lähinnä dokumentointia ja websivu oli jo julkaistu, saatoin dokumentoinnin ohessa käyttää vielä jonkun satunnaisen tunnin jonkin pienen sivuelementin viilaamiseen. Jos kuitenkin mittaan työskentelyäni karkeasti työpäivinä (n. 6h päivässä), niin näin mitattuna harjoitustyön valmistumiseen kului ehkä vähän päälle pari viikkoa, eli n. 16 päivää.
 
-Tarkemmin eriteltynä harjoitustyön rakenteluun kului noin pari viikkoa, jos mittaan työskentelyäni karkeasti työpäivinä (n. 6h päivässä). Sivun perusrakenteen koodaamiseen Bootstrapin elementtien avulla ja vanhaa portfoliota mukaillen meni yhteensä noin neljä päivää. Pääosa tästä eli noin pari päivää meni pelkästään sivun sisällön tuotantoon ja muokkaamiseen ja media queryjen viilaamiseen. Samalla kaiken koodailun rinnalla tein alusta asti myös työn dokumentointia kirjoitellen muistiinpanoja työn eri vaiheista ja etenemisestä. 
+Sivun perusrakenteen koodaamiseen kokonaisuudessaan Bootstrapin elementtien avulla ja vanhaa portfoliota mukaillen meni yhteensä noin neljä päivää. Pääosa tästä eli noin pari päivää meni pelkästään sivun sisällön tuotantoon (erityisesti parin sisällön laajennusta kaivanneen sivuosuuden kohdalla; Skills ja Projects) ja muokkaamiseen ja media queryjen viilaamiseen. Samalla kaiken koodailun rinnalla tein alusta asti myös työn dokumentointia kirjoitellen muistiinpanoja työn eri vaiheista ja etenemisestä. 
 
-Merkittävin uudistunut osio ja siten kehitystyön vaihe oli sivujeni Skills-osio, jonka suunnitteluun ja Grid-rakenteen rakenteluun ja säätelyyn kului kaksi päivää, mukaanluettuna sisällöntuotanto.  
+Aloitin harjoitustyön ensin tekemällä sivun tyylimäärittelyt pelkästään Bootstrapin omilla tyyleillä, joita muokkailin tarpeellisissa kohdissa omalla CSS:llä. Kun sivun rakenne ja sisältö alkoi olla kasassa, otin tässä vaiheessa käyttöön myös Sassin npm:n avulla harjoitellakseni sen käyttöä. Yksi päivä kului kokonaisuudessaan siihen, kun muunsin kaiken siihenastisen sivulla käyttämäni oman CSS:ni Sassiksi, josta sitten käänsin sivulle uuden tyylitiedoston. Tässä vaiheessa työ alkoi olla pääpiirteissään ja sisällöltään jo valmis, ja julkaisin sivun Githubin pagesissa. Harjoitustyönä jatkoin silti sivun ja Sassin viilailua vielä suunnilleen kaksi päivää, joista ensimmäisenä päivänä pohdin ja testailin Sassilla vielä sivun asetteluja ja korjailin pikkuvirheitä. Toinen päivistä kului vielä pelkkään media queryjen lisäilyyn ja villaamiseen, jotta sain sisällön ja varsinkin kuvat asettumaan hyvin myös pienillä puhelimennäytöillä.  
 
-Aloitin harjoitustyön ensin tekemällä sivun tyylimäärittelyt pelkästään Bootstrapin omilla tyyleillä, joita muokkailin tarpeellisissa kohdissa omalla CSS:llä. Kun sivun rakenne ja sisältö alkoi olla kasassa, otin tässä vaiheessa käyttöön myös Sassin harjoitellakseni sen käyttöä. Yksi päivä kului kokonaisuudessaan siihen, kun muunsin kaiken siihenastisen sivulla käyttämäni oman CSS:ni Sassiksi, josta sitten käänsin sivulle uuden tyylitiedoston. Tässä vaiheessa työ alkoi olla pääpiirteissään ja sisällöltään jo valmis, ja julkaisin sivun Githubin pagesissa. Harjoitustyönä jatkoin silti sivun ja Sassin viilailua vielä suunnilleen kaksi päivää, pohtien ja testaillen Sassilla vielä sivun asetteluja ja korjaillen pikkuvirheitä. Toinen päivistä kului vielä pelkkään media queryjen lisäilyyn ja villaamiseen, jotta sain sisällön ja varsinkin kuvat asettumaan hyvin myös pienillä puhelimennäytöillä.  
+Pari päivää kulutin tiedonhakuun uppoutumalla Google Material UI:n dokumentaatioihin, kun pohdin millä tasolla ottaisin sen ohjenuoria mukaan työhöni ja viilaisin vielä sivujeni ulkonäköä. Kokeilin myös Material UI:n käyttöönottoa npm:llä ja testasin Material UI:n elementtityylien käyttöönottoa. Toisena päivänä uppouduin sitten enemmän Material UI:n design-dokumentaatioon, kun hain siitä ohjenuoria joita kannattaisi käyttää sivuillani elementtien korostukseen.
 
-Viimeisenä kulutin vielä useamman päivän (3-4 päivää) kirjoittaen kuntoon ja valmiiksi harjoitustyön dokumentaatiota. Samalla korjailin vielä sivun ja kuvien responsiivisuutta ja grafiikan optimointia, ja testailin sivun Pagespeed-tuloksia. Kun siis lasken yhteen nämä karkeat työpäivät, kului harjoitustyön tekoon suunnilleen 14 päivää.
+Viimeisenä kulutin vielä useamman päivän (5-6 päivää) kirjoittaen kuntoon ja valmiiksi harjoitustyön dokumentaatiota. Samalla korjailin mm. vielä sivun ja kuvien responsiivisuutta ja grafiikan optimointia, lisäsin Material UI:n mukaisia tyylejä ja testailin sivun Pagespeed-tuloksia. Kun siis lasken yhteen nämä karkeat työpäivät, kului harjoitustyön tekoon suunnilleen 15 päivää.
+
+Näiden 15 päivän lisäksi mukaan voi laskea ainakin yhden lisäpäivän, jonka käytin jo ns. sivun jatkokehitykseen. Mietin ja kokeilin koodata sivulle vielä kuvagalleriaa lisäsisältönä, vaikka päätin lopulta jättää tämän kehittämisen harjoitustyön ulkopuolelle. Jatkokehitysmielessä tein myös harjoitustyötä ja dokumentointia viimeistellessä hajanaisia lisätunteja tutkimustyötä erilaisista CSS animointi ja transition-efekteistä, joita sivuillani voisin soveltaa.
 
 
 
@@ -52,9 +54,7 @@ Otin siis Bootstrapin elementteineen työhöni mukaan jo alusta asti, ja rakensi
 
 ### Flexbox/Grid  
 
-Hyödynsin Flexboxia ja Gridiä tarpeen mukaan.
-
-Flexboxia on hyödynnetty Skills-osion card-elementtien otsikoiden ja tähtien asettelussa, sekä social-link ikonien asettelussa, jotta ne on saatu aseteltua samalle riville siististi.  
+Flexboxia on hyödynnetty sivun Skills-osion card-elementtien otsikoiden ja tähtien asettelussa, sekä social-link ikonien asettelussa header- ja Contact-osioissa, jotta ne on saatu aseteltua samalle riville siististi.  
 
 Gridiä hyödynsin sekä Skills- että Portfolio-osioiden korttien asettelussa, jotta niiden koko ja asemointi skaalautuu hyvin eri näyttökoossa media queryjen mukaan.
 
@@ -91,7 +91,7 @@ Jaoin Sass-tiedostoni seuraavalla tavalla:
 - _gridcard.scss: sisältää tyylit grid-muotoiluille korttialueille (Skills & Projects) sekä itse korteille  
 - _media.scss: kaikki media queryt  
 
-Koin Sassin hyödyllisyyden tämän laajuisen websivun rakentamisessa ehkä vielä vähän laihaksi. Sassin harjoittelun ja ymmärtämisen kannalta se ehdottomasti oli hyödyksi, ja sain kuitenkin harjoiteltua muuttujien ja importtien, vähän jopa extendien käyttöä sekä tietenkin Sassin hallintaa yleisesti. Tämän laajuisessa työssä kuitenkaan ole ehkä ihan niin merkittävästi CSS:ää, että muutoin olisi käyttöhyötyä siitä että käyttää Sassia ja pilkkoo CSS:ää sen sijaan että olisi vain käyttänyt tavallista CSS:ää. Ehdottomasti sain kuitenkin hyvää harjoitusta ja varmuutta Sassin käyttöön, ja tämän jälkeen käytän sitä mielelläni missä tahansa muussakin webprojektissa jos vain mahdollista.  
+Koin Sassin hyödyllisyyden tämän laajuisen websivun rakentamisessa ehkä vielä vähän laihaksi. Sassin harjoittelun ja ymmärtämisen kannalta se ehdottomasti oli hyödyksi, ja sain kuitenkin harjoiteltua muuttujien ja importtien, vähän jopa extendien käyttöä sekä tietenkin Sassin hallintaa yleisesti. Tämän laajuisessa työssä kuitenkaan ole ehkä ihan niin merkittävästi CSS:ää, että muutoin olisi käyttöhyötyä siitä että käyttää Sassia ja pilkkoo CSS:ää sen sijaan että olisi vain käyttänyt tavallista CSS:ää. Ehdottomasti sain kuitenkin hyvää harjoitusta ja varmuutta Sassin käyttöön, ja tämän jälkeen käytän sitä mielelläni jopa ensisijaisesti tavallisen CSS:n kirjoittamisen sijaan missä tahansa muussakin webprojektissa jos vain mahdollista.  
 
 Pohdin Sassin muokkaamisen yhteydessä myös sitä, että Bootstrapin lähdekoodinkin olisi voinut asentaa npm:n kautta ja päästä sitä kautta käsiksi ja muokkaamaan Sassilla suoraan myös vaikka Bootstrapin värejä ja muuttujia, kuten [Bootstrapin omasta dokumentaatiosta](https://getbootstrap.com/docs/5.0/customize/sass/) näkyy. Näin olisin ehkä voinut rakentaa suoraan Bootstrapin pohjalta sivuilleni oman custom Sassin, sen sijaan että Bootstrap ja oma CSS/Sassini ovat nyt erillään. Pohdin kuitenkin että koska sivuni on vain portfolio-sivu eikä siksi laajuudeltaan mitenkään iso, olisi tälläinen Bootstrapin suora kustomointi ehkä turhan työläs kokeilu sivujeni kokoon nähden. Ei toki ole poissuljettua, että jos vielä kehitän sivujani, että myöhemmin kokeilisin Bootstrapin kustomointia vielä.  
 
@@ -99,31 +99,34 @@ Pohdin Sassin muokkaamisen yhteydessä myös sitä, että Bootstrapin lähdekood
 ### Visuaalisuus ja siihen liittyvät valinnat perusteluineen  
 
 Sivun visuaalisuus ja värimaailma määräytyi pitkälti otsikkokuvan (pexels-negative-space-169573.jpg) pohjalta, joka on Pexels -kuvapankkipalvelusta jo aiempaan portfolioversioon etsimäni ja siellä käyttämäni kuva. (Kuvan alkuperäinen sijainti: https://www.pexels.com/fi-fi/kuva/apple-etatyo-kannettava-tietokone-koodaus-169573/) Valitsin kuvan aikanaan, koska pidin sen neutraalista harmaasta/tummasta värimaailmasta ja kuvan aihe läppäreineen, muistikirjoineen ja kahvikuppeineen oli ammattimaisen oloinen ja kuvasi mielestäni hyvin IT-alan opiskelijan elämää portfoliokuvana. Käytän kuvaa sivuillani siis ns. hero imagena sivun pääotsikon eli nimeni taustana. Käytin apuna myös W3Schoolsin How To -opasta [Hero Imagen](https://www.w3schools.com/howto/howto_css_hero_image.asp) teosta, ja tummensin kuvaa hieman lisää jotta sen päällä oleva teksti erottuu selvemmin. Käytin kuvan päällä olevassa pääotsikko-tekstissä myös hieman pehmeämpää valkoista väriä (#dadada) kuin puhdasta valkoista, joka erottuu kuvasta hyvin mutta ei kuitenkaan "loista" silmiä rasittavasti tumman kuvan päällä. Kuvaa mukaillen halusin käyttää sivulla myös pääasiallisesti Bootstrapin tummaa teemaa, josta tuli navigaatiopalkin väri.  
-Sivujeni pääväreiksi muodostui siis lopulta Bootstrapin oma Dark-teemaväri (#212529), valkoinen (#ffffff) sekä pehmeä valkoinen (#dadada). Koska nämä värit toistuvat kauttaaltaan koko sivulla, se tuo mielestäni sivuun myös yhtenäisyyden tuntua.
+Sivujeni pääväreiksi muodostui siis lopulta Bootstrapin oma Dark-teemaväri (#212529, navbar ja tummien sivuosioiden taustaväri), valkoinen (#ffffff, card-elementtien tausta) sekä pehmeä valkoinen (#dadada, vaaleiden sivuosioiden taustaväri). Koska nämä värit toistuvat kauttaaltaan koko sivulla, se tuo mielestäni sivuun myös yhtenäisyyden tuntua. Näiden lisäksi käytin muutamia sekundaarisia värejä. Sekä linkkien värinä että elementtien varjoina tummalla taustalla on tavallinen musta (#000000), ja vaalealla taustalla elementtien varjona harmaan sävy (#555555). Erityisesti navigaatiossa käytin vielä hover-efektin värinä tummaa harmaata (#313131). Skills-osion tähtien värinä taas toimii kultaan vivahtava keltaisen sävy (#d6b600).
 
-Hain kaikessa sivuni suunnittelussa sitä, että sivuni näyttäisi ammattimaiselta ja siistiltä, koska kyseessä on kuitenkin työnantajille esiteltävä portfoliosivu. Koska sivulla on kokonaisuudessaan paljon kirjoitettua sisältöä, halusin visuaalisessa mielessä pitää huolen siitä että tekstillä ja elementeillä sekä sivun eri osioilla on ns. "tilaa hengittää" ja sivu sisältöineen ei näyttäisi ahtaalta ja täyteen pakatulta. Halusin myös että eri sivun osiot näkyvät eroteltuna selkeästi toisistaan, joten käytin tummaa Dark-väriä ja valkoista tässäkin siten että eri osioiden taustaväri vaihtuu osioittain. (Header ja navigaatio tumma, About vaalea, Skills tumma jne...). Kaikissa tummissa osioissa käytin otsikkovärinä pehmää valkoista.  
+Hain kaikessa sivuni suunnittelussa sitä, että sivuni näyttäisi ammattimaiselta ja siistiltä, koska kyseessä on kuitenkin työnantajille esiteltävä portfoliosivu. Koska sivulla on kokonaisuudessaan paljon kirjoitettua sisältöä, halusin visuaalisessa mielessä pitää huolen siitä että tekstillä ja elementeillä sekä sivun eri osioilla on ns. "tilaa hengittää" ja sivu sisältöineen ei näyttäisi ahtaalta ja täyteen pakatulta. Halusin myös että eri sivun osiot näkyvät eroteltuna selkeästi toisistaan, joten käytin tummaa Dark-väriä ja valkoista tässäkin siten että eri osioiden taustaväri vaihtuu osioittain. (Header ja navigaatio tumma, About vaalea, Skills tumma jne...). Kaikissa tummissa osioissa käytin otsikkovärinä pehmää valkoista (#dadada).  
 
-Sivuille sijoitetuissa ikoneissa (Github/LinkedIn) käytin Font Awesome -ikonikirjastoa. Tämä oli pääasiassa tottumuskysymys, sillä Bootstrapissa on toki olemassa omakin ikonikirjasto, mutta olen käyttänyt Font Awesomea usein jo aikaisemminkin, ja se on mielestäni ilmaisversionakin vielä laajempi ja huomattavasti monipuolisempi kuin muut olemassaolevat ikonikirjastot.  
+Sivuille sijoitetuissa ikoneissa (Github/LinkedIn) käytin Font Awesome -ikonikirjastoa (https://fontawesome.com/). Tämä oli pääasiassa tottumuskysymys, sillä Bootstrapissa on toki olemassa omakin ikonikirjasto ja kokeilin harjoitustyön aikana lyhyesti myös Material UI:n ikonikirjastoa (https://fonts.google.com/icons). Olen kuitenkin käyttänyt Font Awesomea usein jo aikaisemminkin, ja se on mielestäni ilmaisversionakin vielä laajempi ja huomattavasti monipuolisempi kuin muut olemassaolevat ikonikirjastot.  
 
 Typografiaa olen pohtinut erityisesti navigaatiossa ja About-osiossa. Navigaatiossa käytän fonttina Googlen fonttia [Raleway](https://fonts.google.com/specimen/Raleway), muutoin sivulla on käytetty Bootstrapin [natiivia fontstackia](https://getbootstrap.com/docs/5.0/content/reboot/#native-font-stack). Koska navigaatio pysyy näkyvissä koko ajan sivua rullatessa, ajattelin että erilainen fontti saa navigaation linkkitekstit ja siten koko navigaatio-elementin erottumaan sivun muusta tekstistä ja elementeistä, ja korostaisi siten sivun käytettävyyttä ja navigaation sijaintia. Ralewayn valitsin navigaation fontiksi oikeastaan ihan kokeilemalla, ja totesin sen sitten olevan hyvä vaihtoehto, joka myös jäi. Ralewayn hieman korkeampi rivikorkeus tekee siitä erottuvamman ja selkeämmän näköisen.  
 About-osion tekstissä on käytetty Bootstrapin .lead-luokkaa, joka tekee siitä normaalia tekstiä erottuvamman lisäämällä fonttikokoa ja vähentämällä fontin paksuutta (font-weight). Tekstissä pohdin myös rivien pituutta, ja erityisesti isommilla näytöillä oman kuvani tarkoituksena (sijoittelulla (float)tekstin oikealle puolelle) on katkaista rivipituus tekstikappaleissa siten, että se pysyy helppolukuisena. Pienemmillä näytöillä rivipituus lyhenee ja katkeaa luontaisesti sivun kokonaisleveyteen, jota olen säätänyt myös elementti-luokalla .content, joka kaventaa kaiken sivusisällön leveyden 75% kokonaissivuleveydestä (pienemmillä näytöillä media queryjen avulla vähän leveämpi). Pienemmissä näyttöko'oissa (alle 700px) About-osion kuva asemoituu kaiken tekstin yläpuolelle, jotta se ei "litistä" tekstiä vasemmalla puolellaan liikaa ja siirtyy visuaalisesti miellyttävällä tavalla keskelle. Tähän kuvan asetteluun tuli myös käytettyä paljon media queryjä, jotta kuvan asemointi ja koko muuttui mielestäni sulavasti.
 
-Navigaatio on suunniteltu siten, että se näkyy jatkuvasti ja sen linkkejä klikkaamalla pääsee sivulla siirtymään linkin nimen mukaiseen sivuosioon. Käytettävyyden kannalta ja sivun sisällön pituuden vuoksi päätin kuitenkin lisätä sivun alareunaan myös oman painikkeen sivun alkuun palaamiseksi. Painike tulee siis näkyviin heti, kun sivua on rullattu alaspäin header-kuvan ohi, ja sitä painamalla rullaa sivun takaisin alkuun. Tällainen painike minulla oli vanhassakin portfoliossa, joten idea siitä tuli osaltaan myös sieltä. Sivua koodaillessa sai sen verran tiuhaan rullailla ja selailla sivua itsekin edestakaisin, että painiketta tuli aika äkkiä jopa ikävä. Ja kun löysin W3Schoolsista simppelin tutoriaalin [How TO - Scroll Back To Top Button](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp) painikkeen tekemiseksi JavaScriptillä, niin päätin hyödyntää sitä. 
+Navigaatio on tosiaan suunniteltu siten, että se näkyy jatkuvasti ja sen linkkejä klikkaamalla pääsee sivulla siirtymään linkin nimen mukaiseen sivuosioon. Käytettävyyden kannalta ja sivun kaiken sisällön kokonaispituuden vuoksi päätin kuitenkin lisätä sivun alareunaan myös oman painikkeen sivun alkuun palaamiseksi. Painike tulee siis näkyviin heti, kun sivua on rullattu alaspäin header-kuvan ohi, ja sitä painamalla sivu rullaa takaisin alkuun. Tällainen painike minulla oli vanhassakin portfoliossa, joten idea siitä tuli osaltaan myös sieltä. Sivua koodaillessa sai sen verran tiuhaan rullailla ja selailla sivua itsekin edestakaisin, että painiketta tuli aika äkkiä jopa ikävä. Ja kun löysin W3Schoolsista simppelin tutoriaalin [How TO - Scroll Back To Top Button](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp) painikkeen tekemiseksi JavaScriptillä, niin päätin hyödyntää sitä. 
 
-Vaikka syvennyin kyllä harjoitustyötä tehdessä tarkemmin myös Googlen Material Designiin etsiessäni inspiraatiota sivun ulkoasuun, en kuitenkaan loppujen lopuksi varsinaisesti hyödyntänyt Material Designin guidelineja työssäni. Luulen kuitenkin, että vastaavien käyttöliittymien käytöstä on jäänyt niin paljon vaikutteita selkärankaan, että jotain Material Designia muistuttavia pieniä piirteitä syntyi luonnostaankin portfoliooni.  ... Material UI:tä mukailevat hover-korostukset navigaation linkkeihin, sekä laatikkoelementtien ja buttonien varjostus
 
-Erityisesti vanhan portfolioni Skills-, ja Portfolio-osiot kaipasivat mielestäni muutosta. Vanhassa portfoliossa olin Skills-osioon kirjaimellisesti vain listannut nimeltä merkittävämpiä IT-alan taitojani ja työkaluja, joita osaan käyttää. Nyt halusin kuitenkin tehdä osiosta huomattavasti visuaalisemman. Koska käytän sivua työnhaussa, halusin saada myös arvion osaamistasostani näkyväksi, jotta mahdollinen sivuillani käyvä työnantaja näkisi jo jollain tapaa nopeasti ei vain sen mitä osaan vaan myös kuinka hyvin mahdollisesti jotain osaan. Eli pohdin suunnitellessa, että lisään Skills-osioon kunkin taidon kohdalle jonkinlaisen 1-5 pisteen skaalan tai progress-mittarin tapaisen näyttämään taitotasoa.  
-Päädyin lopulta käyttämään tässä Bootstrapin card-elementtejä. Kukin kortti on siis nimetty tietyn taidon/ohjelmointikielen/työkalun mukaan, ja kyseisessä kortissa kerron lyhyesti osaamisestani ja mitä mahdollisesti olen tehnyt tällä taidolla. Visuaalisemman sain korteista kun lisäsin niiden otsikoihin myös taitotason mittariksi tähdet, jotka siis osoittavat asteikolla 1-5 arvioimani oman taitotasoni kunkin kortin taitolle. Lisävisuaalisuutta sain kortteihin lisäämällä niihin pienet, kunkin ohjelmointikielen/työkalun kuvakkeet. Mielestäni nämä pienet kuvakkeet rikkovat myös sopivalla tavalla muuten ulkonäöltään samanlaisten, toistuvien korttien rykelmän, jossa kortit muuten näyttäisivät samanlaisilta ja tylsiltä lukea. Nyt... 
+Merkittävin vanhasta portfoliostani uudistunut osio ja siten kehitystyön vaihe oli sivujeni Skills-osio, jonka suunnitteluun ja Grid-rakenteen rakenteluun ja säätelyyn kului kaksi päivää, mukaanluettuna sisällöntuotanto. Vanhassa portfoliossa olin Skills-osioon kirjaimellisesti vain listannut nimeltä merkittävämpiä IT-alan taitojani ja työkaluja, joita osaan käyttää. Nyt halusin kuitenkin tehdä osiosta huomattavasti visuaalisemman. Koska käytän sivua työnhaussa, halusin saada myös arvion osaamistasostani näkyväksi, jotta mahdollinen sivuillani käyvä työnantaja näkisi jo jollain tapaa nopeasti ei vain sen mitä osaan vaan myös kuinka hyvin mahdollisesti jotain osaan. Eli pohdin suunnitellessa, että lisään Skills-osioon kunkin taidon kohdalle jonkinlaisen 1-5 pisteen skaalan tai progress-mittarin tapaisen näyttämään taitotasoa.  
+Päädyin lopulta käyttämään tässä Bootstrapin card-elementtejä. Kukin kortti on siis nimetty tietyn taidon/ohjelmointikielen/työkalun mukaan, ja kyseisessä kortissa kerron lyhyesti osaamisestani ja mitä mahdollisesti olen tehnyt tällä taidolla. Visuaalisemman sain korteista kun lisäsin niiden otsikoihin myös taitotason mittariksi tähdet, jotka siis osoittavat asteikolla 1-5 arvioimani oman taitotasoni kunkin kortin taitolle. Lisävisuaalisuutta sain kortteihin lisäämällä niihin pienet, kunkin ohjelmointikielen/työkalun kuvakkeet. Mielestäni nämä pienet kuvakkeet rikkovat myös sopivalla tavalla muuten ulkonäöltään samanlaisten, toistuvien korttien rykelmän, jossa kortit muuten näyttäisivät samanlaisilta ja tylsiltä lukea. 
 
-Portfolio-osion toteutin myös Bootstrapin korteilla. 
+Portfolio-osion toteutin myös Bootstrapin korteilla. Näihin visuaalisuutta tuo erityisesti kortteihin lisätyt kuvat. 
 
 Viimeisenä sivulla on yhteystietojen osio sekä footer, joista ei ole paljonkaan sanottavaa. Sivun kaiken muun sisällön jälkeen keskitetty pieni tekstialue, jossa lukee vain yhteystietoni korostuu ja nousee näkyville.
 
 
+Vaikka syvennyin kyllä harjoitustyötä tehdessä tarkemmin myös [Googlen Material Design](https://material.io/)iin etsiessäni inspiraatiota sivun ulkoasuun, en kuitenkaan loppujen lopuksi varsinaisesti ottanut Material UI:ta käyttöön työssäni. Kokeilin kyllä [Material UI](https://github.com/material-components/material-components-web):n asentamista npm:n avulla sekä eri elementtityylien käyttöönottoa, mutta päädyin lopulta kuitenkin siihen lopputulokseen että Material UI:n varsinainen käyttöönotto oli sivujeni laajuuteen nähden tässä vaiheessa vähän turhan työläs lisäharjoiteltava. Päätin siitä huolimatta kuitenkin yrittää seurata Material UI:n design-filosofiaa sivuelementeissäni mahdollisimman hyvin. Material UI:n tutkimus vaikutti varsinkin siihen, että tajusin ottaa navigaation linkeissä käyttöön paremmin erottuvan hover-efektin, sekä huomioin erityisesti elementtien elevation-tasoja (https://material.io/design/environment/elevation.html), eli miten nostaa niitä näkyviin ikäänkuin eri tasoille näytöllä. Tämä tarkoitti pääasiassa sitä että lisäsin kevyen varjostuksen kaikkiin sivun korttielementteihin ja tiettyihin tärkeimpiin painikkeisiin (button), joka ns. "nostaa" niitä hieman näkyviin sivun taustasta. Varjostukset erityisesti antoivat mukavaa eloisuutta sivulle.  
+  
+Ammattimaisuuden nimissä päädyin sivuilla myös siihen lopputulokseen, että olin hyvin varovainen lisäämään sivuille mitään CSS-animointi efektejä. Pohdin kyllä paljon olisiko ollut jotain hyviä efektejä, mutta koska kyseessä on työhaussa käytettävä portfolio-sivu, en myöskään halunnut aiheuttaa animoinnilla sitä, että sivu alkaisi vaikuttaa sisällöllisesti "levottomalta". Ainoa transitio-efekti sivuilla on Takaisin alkuun paluu -nappulan sekä About-osiossa olevan nappulan skaalaus-efekti (transform: scale()) nappeja painettaessa, mikä korostaa nappien toimintaa ja tärkeyttä.   
+
 
 ### Pagespeed
 
-Testasin portfoliosivuni latausnopeuden [Pagespeedillä](https://developers.google.com/speed/pagespeed/) sekä alkuperäisen Github-portfolion kanssa ennen harjoitustyön aloittamista, että työn päätteeksi uudella portfolioversiolla, kun olin päivittänyt sen vanhan portfolion tilalle Github-pagesin päälle.
+Testasin portfoliosivuni latausnopeuden [Pagespeed Insightilla](https://developers.google.com/speed/pagespeed/) sekä alkuperäisen Github-portfolion kanssa ennen harjoitustyön aloittamista, että työn päätteeksi uudella portfolioversiolla, kun olin päivittänyt sen vanhan portfolion tilalle Github-pagesin päälle.
 
 Alkuperäisen portfolion Pagespeed-tulokset Githubissa:  
 ![Desktop](pagespeed_original_desktop.png)  
@@ -139,29 +142,52 @@ Parannukset Pagespeed-tuloksiin uudella portfoliolla:
 ![Desktop_new](pagespeed_new_desktop.png)  
 ![Mobile_new](pagespeed_new_mobile.png)  
 
-Varsinkin mobiiliversion pagespeed parani siis huomattavasti, joten olen oikein tyytyväinen lopputulokseen.
+Varsinkin mobiiliversion pagespeed parani siis huomattavasti, joten vaikka tulos näyttää vielä että jotain pientä viilattavaa voisi ollakin vielä, olen oikein tyytyväinen lopputulokseen.
 
 
 
 
 ## Yleisiä mietteitä työn kulusta ja mitä tuli opittua
 
-Opin ehdottomasti parempaa ymmärrystä Bootstrapin käytöstä ja sen eri elementeistä.
+Opin ehdottomasti parempaa ymmärrystä Bootstrapin käytöstä ja sen eri elementeistä. Tutustuin paremmin Bootstrapin eri tyyppisiin elementteihin ja niiden muokkaamiseen.
 
 Kaikkein eniten koin että sain oppia ja varmuutta Sassin käyttöön. Tuntui, että taidot sen kanssa kasvoivat kohisten ja käytän Sassia jo aika luontevasti. Tulen varmasti käyttämään sitä mielelläni myös jatkossa.
 
-
-
-Aikataulutustani olisin sikäli voinut parantaa, että harjoitustyöni teko ja sen myötä kurssisuoritukseni myöhästyi aika roimasti suunnitellusta.
+Aikataulutustani olisin sikäli voinut parantaa, että harjoitustyöni teko ja sen myötä kurssisuoritukseni myöhästyi aika roimasti suunnitellusta, koska harjoitustyö jäi roikkumaan rästityönä aika pitkään.
 
 Aikataulu:  
 etukäteen Figma-mallia ja Bootstrapin testailua sivun header-rakenteeseen  
-Aloitus 18.2.2021 ->  lopetus 25.3.2021  
+Aloitus 18.2.2021 ->  lopetus 25.3.2021 ...15.4.2021 
 
-Vähän ylimääräisenä työnä kului vielä päivä eräänlaiseen jatkokehittelyn suunnitteluun, koska pohdin myös kuvagalleria-osion lisäämistä sivuille ja testailin jo senkin koodausta ja asettelua yhdeksi osioksi sivulle. Ajatuksenani oli rakentaa sivulle vielä grid-muotoinen image gallery-osio, josta kunkin kuvan voisi avata omaan modal-ikkunaan Päätin kuitenkin jättää sen kehittelyn vielä tämän harjoitustyön ulkopuolelle.  
+Googlen Material Designin ja UI:n ymmärrystä tuli jonkin verran myös, kun harjoitustyön aikana tuli nyt ajan kanssa uppouduttua senkin dokumentointiin. Aion kokeilla vielä myöhemmin uudestaan Material UI:n käyttöönottoa ja mitä sen tyyleillä ja elementeillä voisi saada aikaan. Erityisesti sivujeni Skills ja Portfolio-osion kortti-elementit voisi Material UI:lla saisi aikaan 
 
-Yhden ylimääräisen päivän kulutin myös jo ns. jatkokehityksen parissa, kun pohdin ja koodailin vielä mahdollista kuvagalleriaa sivuille ja sen yhteydessä opiskelin kuvien avaamista kuvagalleriasta modal-ikkunoihin. Päätin kuitenkin jättää kuvagallerian vielä pois sivun julkaisuversiosta ja samalla tästä harjoitustyöstä. Pääasiassa siksi, että halusin kiirehtiä harjoitustyön valmistumista, ja vaikka kuvagalleria lisäisikin sivun visuaalisuutta ja voin harjoitella siinä vielä esim. animaatiota tai muita visuaalisia kikkoja, ajattelin että sivu sisältää jo  portfolio-sivun tärkeimmän ja oleellisimman sisällön , joten 
 
+### Sivun mahdollinen jatkokehitys
+Sivu on rakenteeltaan ja sisällöltään HTML:nä aika pitkä, joten aloin kyllä pohtia jo sekä jatkokehityksen että käytettävyyden ja visuaalisuuden kannalta, että ainakin jos sisältöä tulee sivulle yhtään lisää, niin voisi olla viisaampi jakaa sisältö alisivuiksi yhden pitkän sivun sijaan. Lisäksi Portfolio-osion kortteja voisi sisällöltään kutistaa, tai muuntaa pienemmiksi korteiksi jotka avaamalla lisätieto aukeaisi näkyviin. Material UI:ssa oli erityisen hyvännäköisiä korttien [designpohjia](https://material-components.github.io/material-components-web-catalog/#/component/card) tähän, joita voisi hyödyntää.
+
+Vähän ylimääräisenä työnä kulutin tosiaan jo päivän verran eräänlaiseen jatkokehittelyn suunnitteluun, koska pohdin myös kuvagalleria-osion lisäämistä sivuille ja testailin jo senkin koodausta ja asettelua yhdeksi osioksi sivulle. Ajatuksenani oli rakentaa sivulle vielä grid-muotoinen image gallery-osio, josta kunkin kuvan voisi avata omaan modal-ikkunaan. Päätin kuitenkin jättää sen kehittelyn vielä tämän harjoitustyön ulkopuolelle. Pääasiassa siksi, että halusin kiirehtiä harjoitustyön valmistumista, ja vaikka kuvagalleria lisäisikin sivun visuaalisuutta ja voin harjoitella siinä vielä esim. animaatiota tai muita visuaalisia kikkoja, ajattelin että sivu sisältää jo  portfolio-sivun tärkeimmän ja oleellisimman sisällön, joten siinä mielessä sivu täyttää jo tehtävänsä. Pohdin tässäkin mahdollista Material UI:n käyttöä. 
+
+Vaikka tässä vaiheessa tosiaan jätin sivuilta pois kaikenlaisen animoinnin, jotain vaikka tietyn elementin animointia saatan silti lisätä myöhemmin sivulle kunhan keksin jotain sopivaa. Esimerkiksi jos lisään sivuille vielä kuvagallerian, niin siihen ainakin voisi keksiä jotain sopivaa animointia
+
+
+On mahdollista, että otan myös vielä Material UI:n käyttöön sivuilla. 
+
+Elevation/shadows:
+https://material.io/design/environment/elevation.html
+https://github.com/material-components/material-components-web/tree/master/packages/mdc-elevation
+
+FAB:
+https://material.io/components/buttons-floating-action-button/web
+https://github.com/material-components/material-components-web/tree/master/packages/mdc-fab
+
+Bootstrap cards vs. Material UI cards
+
+Yksi efekti jonka olisin halunnut saada toimimaan on, että pienemmillä näytöillä avautuva navigaatio sulkeutuisi automaattisesti linkkiä painettaessa. En kuitenkaan löytänyt siihen ihan helppoa ratkaisua.
+
+
+## Arvosanaehdotus itselle perusteluineen
+
+Arvelisin että harjoitustyöni on tällä hetkellä ainakin arvosanan 3 arvoinen. 
 - CSS animointi
 - visuaalisuus (kuvat, animaatio, typografia, Google Material Design)
 - hyvä skaalautuvuus ja selaintuki (mobile first!)
@@ -169,11 +195,3 @@ Yhden ylimääräisen päivän kulutin myös jo ns. jatkokehityksen parissa, kun
 - visuaalisuutta ja käyttöliittymäsuunnittelua mietitty  
 - optimointi:  https://developers.google.com/speed/pagespeed/  
 - raportoinnissa opiskelija osaa vertailla ja perustella valintojansa  
-
-### Sivun mahdollinen jatkokehitys
-Sivu on rakenteeltaan ja sisällöltään HTML:nä aika pitkä, joten aloin kyllä pohtia jo sekä jatkokehityksen että käytettävyyden ja visuaalisuuden kannalta, että ainakin jos sisältöä tulee sivulle yhtään lisää, niin voisi olla viisaampi jakaa sisältö alisivuiksi yhden pitkän sivun sijaan.
-
-Pohdin työn aikana myös animaation käyttöä tai oman SVG-grafiikan luomista.
-
-
-## Arvosanaehdotus itselle perusteluineen
