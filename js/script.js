@@ -1,5 +1,6 @@
 var mybutton = document.getElementById("toTop");
 
+
 // BACK TO TOP BUTTON
 // https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
 // When the user scrolls down 50px from the top of the document, show the button
