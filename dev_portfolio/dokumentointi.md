@@ -171,7 +171,11 @@ Parannukset Pagespeed-tuloksiin uudella portfoliolla:
 ![Mobile_new](pagespeed_new_mobile.png)
 
 Varsinkin mobiiliversion pagespeed parani siis huomattavasti, joten vaikka tulos näyttää vielä että jotain pientä viilattavaa voisi ollakin vielä, olen oikein tyytyväinen lopputulokseen.
-PageSpeed ehdotti erityisesti yhä sivun kuvien muuttamista seuraavan sukupolven muotoihin (JPEG 2000, JPEG XR ja WebP) ja joidenkin kuvien kokojen kutistamista entisestään.
+PageSpeed ehdotti erityisesti yhä sivun kuvien muuttamista seuraavan sukupolven muotoihin (JPEG 2000, JPEG XR ja WebP) ja joidenkin kuvien kokojen kutistamista entisestään. Varsinkin sivun mobiiliversiota varten voisin kyllä kokeilla vielä myöhemmin muuntaa ainakin osan sivun kuvista esim. Googlen WebP-formaattiin, joka alkaa tällä hetkellä olla jo selaimissa laajasti tuettu.
+
+Pagespeedin suositukset ja diagnostiikka:  
+![Pagespeed suositukset](pagespeed_recommend.png)
+
 Lisäksi korostan huomiota että koska tein harjoitustyöhön liittyvän kaiken kehitystyön Githubissa ja ensin Githubiin julkaistavan sivun parissa (josta Gitlabiin julkaisemani versio on vain kopio), kaikki PageSpeed-tulokset koskevat siis Githubin sivuversiota. En testannut PageSpeediä Gitlab-sivuun sivun sinne kopioinnin jälkeen, koska se sivu ei tule olemaan julkisesti saatavilla muuten kuin tämän harjoitustyön muodossa.
 
 ## Yleisiä mietteitä työn kulusta ja mitä tuli opittua
