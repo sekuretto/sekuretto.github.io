@@ -7,14 +7,19 @@
   <meta name="description" content="Marja Jämbeck, portfolio, CV">
   <meta name="author" content="Marja Jämbeck, Sekuretto">
   <title>Sekuretto: Marja Jämbeck</title>
+  <!-- Bootstrap -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <!-- Material UI -->
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/a96490c3a3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark mdc-elevation--z16">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Marja Jämbeck</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
@@ -32,9 +37,9 @@
           <li class="nav-item">
             <a class="nav-link" href="#portfolio">Portfolio</a>
           </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="#image-gallery">Image Gallery</a>
-          </li> -->
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#image-gallery" tabindex="-1" aria-disabled="true">Image Gallery</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
           </li>
@@ -84,7 +89,7 @@
   <!-- Content -->
   <section id="about">
     <article class="container-fluid content">
-      <img class="mt-5 border border-dark rounded-circle" src="./images/marja.jpg" alt="Marja">
+      <img class="mt-5 border border-dark rounded-circle  mdc-elevation--z5" src="./images/marja.jpg" alt="Marja">
       <p class="lead mt-5 mb-4">Nimeni on Marja ja opiskelen <a href="http://www.jamk.fi">JAMK</a>:issa IT-instituutissa
         tieto- ja viestintätekniikkaa.
         Koulutussuuntautumiseni
@@ -103,7 +108,7 @@
         kuluvan vuoden
         aikana, ja siten päästä kehittymään web-kehittäjänä/ohjelmoijana ja päästä oppimaan uusiakin tekniikoita.
       </p>
-      <a class="btn btn-dark btn-xl js-scroll-trigger" href="CV_jambeck_2021.pdf">My CV</a>
+      <a class="btn btn-dark btn-xl js-scroll-trigger mdc-elevation--z5" href="CV_jambeck_2021.pdf">My CV</a>
       <p class="lead mb-5"><br />Voit lukea minusta lisää myös <a
           href="https://www.linkedin.com/in/marja-jambeck/">LinkedIn</a>:stä.</p>
     </article>
@@ -114,7 +119,7 @@
       <h2 class="text-center mb-5">Skills &amp; Tools</h2>
 
       <div class="skills-grid">
-        <div class="card">
+        <div class="card mdc-elevation--z5">
           <div class="card-header">
             <h5><strong>HTML</strong></h5>
             <div class="stars">
@@ -133,7 +138,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card mdc-elevation--z5">
           <div class="card-header">
             <h5><strong>CSS</strong></h5>
             <div class="stars">
@@ -157,11 +162,11 @@
               käytössä.<br>
               Käyttöliittymien suunnittelumielessä haluaisin oppia vielä myös parempaa asettelua.
             </p>
-            <a href="https://github.com/sekuretto/HTML-and-CSS" class="btn btn-dark">Github</a>
+            <a href="https://github.com/sekuretto/HTML-and-CSS" class="btn btn-dark mdc-elevation--z2">Github</a>
           </div>
         </div>
 
-        <div class="card">
+        <div class="card mdc-elevation--z5">
           <div class="card-header">
             <h5><strong>SASS</strong></h5>
             <div class="stars">
@@ -178,11 +183,12 @@
               tutoriaalin avulla rakentaen pari pientä sivupohjaa, joiden tyylitiedostot rakensin Sassilla. Sen jälkeen
               olen käyttänyt Sassia tämän portfoliosivun rakentamisessa. Aion käyttää Sassia myös jatkossa
               mahdollisimman paljon ja jatkaa sen harjoittelua, sillä sen käyttö ja syntax tuntuvat luontevilta.</p>
-            <a href="https://github.com/sekuretto/TTMS0400-web-visualisointi" class="btn btn-dark">Github</a>
+            <a href="https://github.com/sekuretto/TTMS0400-web-visualisointi"
+              class="btn btn-dark mdc-elevation--z2">Github</a>
           </div>
         </div>
 
-        <div class="card">
+        <div class="card mdc-elevation--z5">
           <div class="card-header">
             <h5><strong>JavaScript</strong></h5>
             <div class="stars">
@@ -199,11 +205,11 @@
               on JSON-muotoinen data. Tarvitsen harjoitusta vielä ainakin hyvään koodirakenteeseen.<br><br>
               Viimeisimpänä olen tehnyt oman projektin: Stock Data Project (kts. <a href="#portfolio">Portfolio</a>).
             </p>
-            <a href="https://github.com/sekuretto/JavaScript" class="btn btn-dark">Github</a>
+            <a href="https://github.com/sekuretto/JavaScript" class="btn btn-dark mdc-elevation--z2">Github</a>
           </div>
         </div>
 
-        <div class="card">
+        <div class="card mdc-elevation--z5">
           <div class="card-header">
             <h5><strong>React</strong></h5>
             <div class="stars">
@@ -223,11 +229,11 @@
               Reactin ohella minua kiinnostavat myös <strong>Vue, TypeScript ja Angular</strong>, ja aion kokeilla niitä
               ja jatkaa opiskeluani niihin ehkä Reactin jälkeen.
             </p>
-            <a href="https://github.com/sekuretto/React" class="btn btn-dark">Github</a>
+            <a href="https://github.com/sekuretto/React" class="btn btn-dark mdc-elevation--z2">Github</a>
           </div>
         </div>
 
-        <div class="card">
+        <div class="card mdc-elevation--z5">
           <div class="card-header">
             <h5><strong>Vue</strong></h5>
             <div class="stars">
@@ -240,11 +246,11 @@
             <p class="card-text">Olen kokeillut Vuea ja harjoitellut sen perusteita tekemällä crash course -tutoriaalin
               avulla Vuella pienen task tracker -sovelluksen.
             </p>
-            <a href="https://github.com/sekuretto/Vue" class="btn btn-dark">Github</a>
+            <a href="https://github.com/sekuretto/Vue" class="btn btn-dark mdc-elevation--z2">Github</a>
           </div>
         </div>
 
-        <div class="card">
+        <div class="card mdc-elevation--z5">
           <div class="card-header">
             <h5><strong>WordPress</strong></h5>
             <div class="stars">
@@ -270,11 +276,11 @@
               WordPress-kehittäminen kiinnostaa minua edelleen, ja sitä opettelisin mielellään lisää myös
               tulevaisuudessa, jos siihen tilaisuus aukeaa.
             </p>
-            <a href="https://github.com/sekuretto/WordPress" class="btn btn-dark">Github</a>
+            <a href="https://github.com/sekuretto/WordPress" class="btn btn-dark mdc-elevation--z2">Github</a>
           </div>
         </div>
 
-        <div class="card">
+        <div class="card mdc-elevation--z5">
           <div class="card-header">
             <h5><strong>Git</strong></h5>
             <div class="stars">
@@ -296,7 +302,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card mdc-elevation--z5">
           <div class="card-header">
             <h5><strong>Figma</strong></h5>
             <div class="stars">
@@ -312,7 +318,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card mdc-elevation--z5">
           <div class="card-header">
             <h5><strong>PHP</strong></h5>
             <div class="stars">
@@ -330,11 +336,11 @@
               WordPressin opettelun yhteydessä. Olen myös videotutoriaalin
               avulla koodannut Laravelilla pientä blogi-sovellusta kerraten itse Laravelin rakennetta ja toimintaa.
             </p>
-            <a href="https://github.com/sekuretto/PHP" class="btn btn-dark">Github</a>
+            <a href="https://github.com/sekuretto/PHP" class="btn btn-dark mdc-elevation--z2">Github</a>
           </div>
         </div>
 
-        <div class="card">
+        <div class="card mdc-elevation--z5">
           <div class="card-header">
             <h5><strong>Project Managing</strong></h5>
             <div class="stars">
@@ -358,7 +364,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card mdc-elevation--z5">
           <div class="card-header">
             <h5><strong>Linux / Ubuntu <br>(Apache/XAMPP)</strong></h5>
             <div class="stars">
@@ -381,7 +387,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card mdc-elevation--z5">
           <div class="card-header">
             <h5><strong>Android Studio / Kotlin</strong></h5>
             <div class="stars">
@@ -398,11 +404,12 @@
               perusteita. Kurssiharjoituksina rakensin pieniä Android-sovelluksen raakileita testaillen ja opetellen
               Android-sovellusten rakennetta ja elementtien toimintaa.<br><br>
               Android-kehitys voisi kiinnostaa minua jatkossakin, ja Kotlinia voisi opetella lisää.</p>
-            <a href="https://github.com/sekuretto/Android-Application-Development" class="btn btn-dark">Github</a>
+            <a href="https://github.com/sekuretto/Android-Application-Development"
+              class="btn btn-dark mdc-elevation--z2">Github</a>
           </div>
         </div>
 
-        <div class="card">
+        <div class="card mdc-elevation--z5">
           <div class="card-header">
             <h5><strong>SQL</strong></h5>
             <div class="stars">
@@ -416,7 +423,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card mdc-elevation--z5">
           <div class="card-header">
             <h5><strong>Adobe / Inkscape /<br> Blender</strong></h5>
             <div class="stars">
@@ -435,7 +442,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card mdc-elevation--z5">
           <div class="card-header">
             <h5><strong>C#</strong></h5>
             <div class="stars">
@@ -453,7 +460,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card mdc-elevation--z5">
           <div class="card-header">
             <h5><strong>C++</strong></h5>
             <div class="stars">
@@ -479,7 +486,7 @@
       <h2 class="text-center mb-5">Portfolio &amp; Projects</h2>
 
       <div class="project-grid">
-        <div class="card">
+        <div class="card mdc-elevation--z5">
           <img src="images/portfolio.png" class="card-img-top" alt="">
           <div class="card-header">
             <h5><strong>Portfolio-websivu</strong></h5>
@@ -499,19 +506,20 @@
               Sassin käyttöä, ja käytin Node.js/npm:ää kääntääkseni Sass-tiedostot CSS:ksi. Sivun sisällössä
               harjoittelin myös Gridin käyttöä, sekä pohdin sivun visuaalisuutta ja käytettävyyttä. Tutkin ja opiskelin
               myös Googlen <a href="https://material.io/" target="_blank">Material Design</a> -designmallia pohtiessani
-              sivujen visuaalista
-              rakennetta ja ilmettä, sekä lisätoiminnallisuuksien rakentamista.<br><br>
+              sivujen visuaalista rakennetta ja ilmettä pyrkien ottamaan sen design-ohjeistuksen mukaisia tyylejä ja
+              asettelua käyttöön sivuillani (erityisesti sivuelementtien elevation/shadows).<br><br>
               Sivut on julkaistu sekä Githubin github-pagesin että JAMKin Gitlab pagesin päälle.<br><br>
               Sivu on vielä kehittelyssä, sillä testailen vielä mahdollisuutta ja tapoja rakentaa sivuille vielä
               kuvagalleria (erityisesti modalit).<br><br>
               Lähdekoodi:<br>
-              <a href="https://github.com/sekuretto/sekuretto.github.io" class="btn btn-dark">Github</a>
+              <a href="https://github.com/sekuretto/sekuretto.github.io"
+                class="btn btn-dark mdc-elevation--z2">Github</a>
             </p>
 
           </div>
         </div>
 
-        <div class="card">
+        <div class="card mdc-elevation--z5">
           <img src="images/stockproject.png" class="card-img-top" alt="">
           <div class="card-header">
             <h5><strong>Stock Market Data</strong></h5>
@@ -536,13 +544,13 @@
               Aion jatkaa vielä sovelluksen kehittämistä - erityisesti sen ulkoasua ja koodirakenteen korjausta, ja
               saatan myös käyttää sitä Reactin harjoitteluun kokeillen muokata sen toimimaan Reactilla.<br><br>
               Dokumentaatio ja lähdekoodi:<br>
-              <a href="https://github.com/sekuretto/stockproject" class="btn btn-dark">Github</a>
+              <a href="https://github.com/sekuretto/stockproject" class="btn btn-dark mdc-elevation--z2">Github</a>
             </p>
 
           </div>
         </div>
 
-        <div class="card">
+        <div class="card mdc-elevation--z5">
           <img src="images/portfolio-1.png" class="card-img-top" alt="">
           <div class="card-header">
             <h5><strong>WIMMA Lab (JAMK)</strong></h5>
@@ -616,7 +624,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card mdc-elevation--z5">
           <img src="images/portfolio-2.png" class="card-img-top" alt="">
           <div class="card-header">
             <h5><strong>Wille (prototyyppi)</strong></h5>
@@ -645,7 +653,7 @@
               työskentelyä ja kommunikointia, oli dokumentointi ja viestintä tärkeässä osassa koko projektin
               ajan.<br><br>
               Dokumentaatio ja lähdekoodi:<br> <a href="https://github.com/sekuretto/Refil"
-                class="btn btn-dark">Github</a><br><br>
+                class="btn btn-dark mdc-elevation--z2">Github</a><br><br>
               Käyttöliittymä-mockup (Figma): <a
                 href="https://www.figma.com/file/zF5n5CvPTRwBpRqLOtIJtU/Wille-Projekti-Refil-2018-2019?node-id=98%3A702">Refil/Wille</a><br><br>
               Ohjelmistoprototyypin jatkokehitysoikeudet on Projekti-kurssin lopuksi luovutettu projektisopimuksen
@@ -654,7 +662,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card mdc-elevation--z5">
           <img src="images/portfolio-3.png" class="card-img-top" alt="">
           <div class="card-header">
             <h5><strong>Platz</strong></h5>
@@ -671,7 +679,7 @@
               sovellusprototyyppi toteutettiin, ja myös siis PHP:n käyttöä. Syventävää harjoittelua myös
               projektinhallintaan ja ryhmätyöhön useamman hengen tiimissä.<br><br>
               Dokumentaatio ja lähdekoodi:<br>
-              <a href="https://github.com/sekuretto/Platz" class="btn btn-dark">Github</a>
+              <a href="https://github.com/sekuretto/Platz" class="btn btn-dark mdc-elevation--z2">Github</a>
             </p>
           </div>
         </div>
@@ -701,7 +709,8 @@
           <i class="fab fa-linkedin fa-3x"></i>
         </a>
       </div>
-      <button onclick="returnToTop()" id="toTop" class="btn btn-dark" title="Takaisin sivun alkuun">&uarr;</button>
+      <button onclick="returnToTop()" id="toTop" class="btn btn-dark mdc-elevation--z6"
+        title="Takaisin sivun alkuun">&uarr;</button>
     </article>
   </section>
 
@@ -712,6 +721,8 @@
 
 <!-- Bootstrap JavaScript Bundle -->
 <script src="js/bootstrap.min.js"></script>
+<!-- Material UI JS-->
+<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
 <script src="js/script.js"></script>
 
 </html>
