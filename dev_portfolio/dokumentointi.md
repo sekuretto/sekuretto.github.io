@@ -170,7 +170,7 @@ Parannukset Pagespeed-tuloksiin uudella portfoliolla:
 ![Desktop_new](pagespeed_new_desktop.png)  
 ![Mobile_new](pagespeed_new_mobile.png)
 
-Varsinkin mobiiliversion pagespeed parani siis huomattavasti, joten vaikka tulos näyttää vielä että jotain pientä viilattavaa voisi ollakin vielä, olen oikein tyytyväinen lopputulokseen.
+Varsinkin mobiiliversion pagespeed parani siis huomattavasti, joten vaikka tulos näyttää vielä että jotain pientä viilattavaa voisi ollakin vielä, olen oikein tyytyväinen lopputulokseen. Lisäksi korostan huomiota että koska tein harjoitustyöhön liittyvän kaiken kehitystyön Githubissa ja ensin Githubiin julkaistavan sivun parissa (josta Gitlabiin julkaisemani versio on vain kopio), kaikki PageSpeed-tulokset koskevat siis Githubin sivuversiota. En testannut PageSpeediä Gitlab-sivuun sivun sinne kopioinnin jälkeen, koska se sivu ei tule olemaan julkisesti saatavilla muuten kuin tämän harjoitustyön muodossa.
 
 ## Yleisiä mietteitä työn kulusta ja mitä tuli opittua
 
